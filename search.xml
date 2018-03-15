@@ -19,7 +19,7 @@
   <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2018%2F03%2F14%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. 博客搭建步骤简记1、按照教程配好基础的博客并修改个人信息2、更换主题为next3、添加分类、标签功能4、添加搜索功能，next官网上有很多第三方搜索服务，我用的是Local Search，具体可以按照教程来5、添加统计，同上，我用的不蒜子Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <content type="text"><![CDATA[博客搭建步骤简记1、按照教程配好基础的博客并修改个人信息2、更换主题为next3、添加分类、标签功能4、添加搜索功能，next官网上有很多第三方搜索服务，我用的是Local Search，具体可以按照教程来5、添加统计，同上，我用的不蒜子6、添加评论功能，同上，我用的是DISQUS]]></content>
       <categories>
         <category>initTest1</category>
       </categories>
