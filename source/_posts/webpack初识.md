@@ -1,8 +1,8 @@
 ---
 title: webpack初识
 date: 2018-03-19 16:57:00
-categories: webpack
-tags: 打包
+categories: 打包
+tags: webpack
 ---
 ## 安装webpack
 
