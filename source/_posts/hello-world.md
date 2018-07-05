@@ -18,3 +18,4 @@ tags: test1
 11. 解决github+Hexo的博客多终端同步问题(https://www.jianshu.com/p/6fb0b287f950)
 
 发布文章要用gitbash，用终端报错，很神奇
+发布文章完成后记得上传到git的hexo分支，保存源代码
