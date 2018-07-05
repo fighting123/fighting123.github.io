@@ -1,8 +1,8 @@
 ---
 title: '''node-crwl-lagou'''
 date: 2018-07-05 10:38:51
-categories: 打包
-tags: webpack
+categories: 爬虫
+tags: node
 ---
 ## 前言 ##
 
