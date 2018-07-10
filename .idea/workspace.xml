@@ -4,7 +4,6 @@
     <list default="true" id="1a1025d7-37bb-41fa-9ea7-d293218f422e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next" afterPath="$PROJECT_DIR$/themes/next" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/node-crwl-lagou.md" afterPath="$PROJECT_DIR$/source/_posts/node-crwl-lagou.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,18 +21,18 @@
       <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
+            <state relative-caret-position="1848">
               <caret line="84" column="12" lean-forward="false" selection-start-line="84" selection-start-column="2" selection-end-line="84" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello-world.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hello-world.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/_posts/hello-world.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="440">
+              <first_editor relative-caret-position="336">
                 <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
                 <folding />
               </first_editor>
@@ -46,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/source/_posts/hello-world-2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1034">
+              <first_editor relative-caret-position="248">
                 <caret line="47" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
                 <folding />
               </first_editor>
@@ -104,21 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="node-crwl-lagou.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="node-crwl-lagou.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/node-crwl-lagou.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="88">
+              <first_editor relative-caret-position="-2816">
                 <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
                 <folding />
               </first_editor>
@@ -130,18 +119,33 @@
       <file leaf-file-name="search.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.deploy_git/search.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="27" />
+            <state relative-caret-position="638">
+              <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="27" />
               <folding>
-                <marker date="1530760691459" expanded="true" signature="10788:10840" ph="..." />
-                <marker date="1530760691459" expanded="true" signature="10853:10894" ph="..." />
-                <marker date="1530760691459" expanded="true" signature="10915:12174" ph="..." />
-                <marker date="1530760691459" expanded="true" signature="12052:12111" ph="..." />
-                <marker date="1530760691459" expanded="true" signature="12124:12163" ph="..." />
-                <marker date="1530760691459" expanded="true" signature="12184:13003" ph="..." />
-                <marker date="1530760691459" expanded="true" signature="12881:12940" ph="..." />
-                <marker date="1530760691459" expanded="true" signature="12953:12992" ph="..." />
+                <marker date="1531203345286" expanded="true" signature="12398:12450" ph="..." />
+                <marker date="1531203345286" expanded="true" signature="12463:12501" ph="..." />
+                <marker date="1531203345286" expanded="true" signature="12522:15251" ph="..." />
+                <marker date="1531203345286" expanded="true" signature="15134:15186" ph="..." />
+                <marker date="1531203345286" expanded="true" signature="15199:15240" ph="..." />
+                <marker date="1531203345286" expanded="true" signature="15261:16520" ph="..." />
+                <marker date="1531203345286" expanded="true" signature="16398:16457" ph="..." />
+                <marker date="1531203345286" expanded="true" signature="16470:16509" ph="..." />
+                <marker date="1531203345286" expanded="true" signature="16530:17349" ph="..." />
+                <marker date="1531203345286" expanded="true" signature="17227:17286" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="node-login-segmentfault.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/node-login-segmentfault.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="3278">
+                <caret line="149" column="65" lean-forward="false" selection-start-line="149" selection-start-column="65" selection-end-line="149" selection-end-column="65" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -206,6 +210,7 @@
         <option value="$PROJECT_DIR$/.deploy_git/search.xml" />
         <option value="$PROJECT_DIR$/source/_posts/hello-world.md" />
         <option value="$PROJECT_DIR$/source/_posts/node-crwl-lagou.md" />
+        <option value="$PROJECT_DIR$/source/_posts/node-login-segmentfault.md" />
       </list>
     </option>
   </component>
@@ -239,7 +244,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -336,6 +340,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -458,33 +463,33 @@
       <workItem from="1521449626502" duration="2679000" />
       <workItem from="1521510331638" duration="1135000" />
       <workItem from="1521513549455" duration="172000" />
-      <workItem from="1530758274354" duration="2450000" />
+      <workItem from="1530758274354" duration="3173000" />
+      <workItem from="1531203080110" duration="416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33948000" />
+    <option name="totallyTimeSpent" value="35087000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40401787" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40401787" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -499,13 +504,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/next/layout/_partials/footer.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="38" column="28" lean-forward="false" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/hello-world-2.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -764,7 +762,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -779,7 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -801,17 +797,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.deploy_git/search.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="27" />
+        <state relative-caret-position="638">
+          <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="27" />
           <folding>
-            <marker date="1530760691459" expanded="true" signature="10788:10840" ph="..." />
-            <marker date="1530760691459" expanded="true" signature="10853:10894" ph="..." />
-            <marker date="1530760691459" expanded="true" signature="10915:12174" ph="..." />
-            <marker date="1530760691459" expanded="true" signature="12052:12111" ph="..." />
-            <marker date="1530760691459" expanded="true" signature="12124:12163" ph="..." />
-            <marker date="1530760691459" expanded="true" signature="12184:13003" ph="..." />
-            <marker date="1530760691459" expanded="true" signature="12881:12940" ph="..." />
-            <marker date="1530760691459" expanded="true" signature="12953:12992" ph="..." />
+            <marker date="1531203345286" expanded="true" signature="12398:12450" ph="..." />
+            <marker date="1531203345286" expanded="true" signature="12463:12501" ph="..." />
+            <marker date="1531203345286" expanded="true" signature="12522:15251" ph="..." />
+            <marker date="1531203345286" expanded="true" signature="15134:15186" ph="..." />
+            <marker date="1531203345286" expanded="true" signature="15199:15240" ph="..." />
+            <marker date="1531203345286" expanded="true" signature="15261:16520" ph="..." />
+            <marker date="1531203345286" expanded="true" signature="16398:16457" ph="..." />
+            <marker date="1531203345286" expanded="true" signature="16470:16509" ph="..." />
+            <marker date="1531203345286" expanded="true" signature="16530:17349" ph="..." />
+            <marker date="1531203345286" expanded="true" signature="17227:17286" ph="..." />
           </folding>
         </state>
       </provider>
@@ -852,7 +850,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
+        <state relative-caret-position="1848">
           <caret line="84" column="12" lean-forward="false" selection-start-line="84" selection-start-column="2" selection-end-line="84" selection-end-column="12" />
           <folding />
         </state>
@@ -861,7 +859,7 @@
     <entry file="file://$PROJECT_DIR$/source/_posts/hello-world-2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1034">
+          <first_editor relative-caret-position="248">
             <caret line="47" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
             <folding />
           </first_editor>
@@ -872,6 +870,17 @@
         <state relative-caret-position="264">
           <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/node-crwl-lagou.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-2816">
+            <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -886,10 +895,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/node-login-segmentfault.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="3278">
+            <caret line="149" column="65" lean-forward="false" selection-start-line="149" selection-start-column="65" selection-end-line="149" selection-end-column="65" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/hello-world.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="440">
+          <first_editor relative-caret-position="336">
             <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
             <folding />
           </first_editor>
@@ -900,17 +920,6 @@
         <state relative-caret-position="374">
           <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/node-crwl-lagou.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="88">
-            <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
