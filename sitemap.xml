@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://fighting123.github.io/2018/03/14/hello-world/</loc>
+    
+    <lastmod>2018-10-31T09:47:47.701Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://fighting123.github.io/about/index.html</loc>
+    
+    <lastmod>2018-10-31T09:34:21.859Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://fighting123.github.io/categories/index.html</loc>
+    
+    <lastmod>2018-10-31T09:21:29.864Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://fighting123.github.io/tags/index.html</loc>
+    
+    <lastmod>2018-10-31T09:21:19.696Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://fighting123.github.io/2018/07/10/node-login-segmentfault/</loc>
     
     <lastmod>2018-07-10T07:11:54.720Z</lastmod>
@@ -16,13 +44,6 @@
   </url>
   
   <url>
-    <loc>https://fighting123.github.io/2018/03/14/hello-world/</loc>
-    
-    <lastmod>2018-07-05T03:17:16.058Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://fighting123.github.io/2018/03/19/webpack%E5%88%9D%E8%AF%86/</loc>
     
     <lastmod>2018-07-05T02:53:17.855Z</lastmod>
@@ -30,30 +51,9 @@
   </url>
   
   <url>
-    <loc>https://fighting123.github.io/tags/index.html</loc>
-    
-    <lastmod>2018-03-16T01:12:42.491Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://fighting123.github.io/2018/03/15/hello-world-2/</loc>
     
     <lastmod>2018-03-15T08:12:17.905Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://fighting123.github.io/404.html</loc>
-    
-    <lastmod>2018-03-15T07:15:41.012Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://fighting123.github.io/categories/index.html</loc>
-    
-    <lastmod>2018-03-15T07:11:28.861Z</lastmod>
     
   </url>
   
