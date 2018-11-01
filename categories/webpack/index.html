@@ -93,7 +93,7 @@
 <meta name="description" content="但行好事，莫问前程">
 <meta property="og:type" content="website">
 <meta property="og:title" content="huog的个人博客">
-<meta property="og:url" content="https://fighting123.github.io/tags/test2/index.html">
+<meta property="og:url" content="https://fighting123.github.io/categories/webpack/index.html">
 <meta property="og:site_name" content="huog的个人博客">
 <meta property="og:description" content="但行好事，莫问前程">
 <meta property="og:locale" content="zh-Hans">
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="https://fighting123.github.io/tags/test2/"/>
+  <link rel="canonical" href="https://fighting123.github.io/categories/webpack/"/>
 
 
 
 
 
-  <title>标签: test2 | huog的个人博客</title>
+  <title>分类: webpack | huog的个人博客</title>
   
 
 
@@ -295,11 +295,11 @@
   
   
   
-  <div class="post-block tag">
+  <div class="post-block category">
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>test2<small>标签</small>
+        <h1>webpack<small>分类</small>
         </h1>
       </div>
 
@@ -311,9 +311,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2018/03/15/hello-world-2/" itemprop="url">
+            <a class="post-title-link" href="/2018/03/19/webpack初识/" itemprop="url">
               
-                <span itemprop="name">Hello World</span>
+                <span itemprop="name">webpack初识</span>
               
             </a>
         
@@ -321,9 +321,9 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-15T09:54:10+08:00"
-              content="2018-03-15" >
-          03-15
+              datetime="2018-03-19T16:57:00+08:00"
+              content="2018-03-19" >
+          03-19
         </time>
       </div>
 
@@ -340,6 +340,7 @@
   
 
   
+
 
 
           </div>
@@ -373,7 +374,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/images/avatar.gif"
+                src="/images/background.png"
                 alt="huog" />
             
               <p class="site-author-name" itemprop="name">huog</p>
@@ -409,7 +410,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -604,14 +605,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
-    
-
-    
-
-  
-
 
 
 
@@ -637,6 +630,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '7WaSgCex2B2P5jA0z0aVClvi-gzGzoHsz',
+        appKey: 'xrWjLI4LLvg1BHFMQb9H1fxY',
+        placeholder: 'Just go go',
+        avatar:'hide',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

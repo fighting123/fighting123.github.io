@@ -314,10 +314,10 @@
         
           <div class="tag-cloud">
             <div class="tag-cloud-title">
-                目前共计 5 个标签
+                目前共计 8 个标签
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/hexo配置/" style="font-size: 12px; color: #ccc">hexo配置</a> <a href="/tags/node/" style="font-size: 12px; color: #ccc">node</a> <a href="/tags/test2/" style="font-size: 12px; color: #ccc">test2</a> <a href="/tags/webpack/" style="font-size: 12px; color: #ccc">webpack</a> <a href="/tags/搭建hexo简记/" style="font-size: 12px; color: #ccc">搭建hexo简记</a>
+              <a href="/tags/hexo基本操作/" style="font-size: 12px; color: #ccc">hexo基本操作</a> <a href="/tags/hexo搭建简记/" style="font-size: 12px; color: #ccc">hexo搭建简记</a> <a href="/tags/node/" style="font-size: 30px; color: #111">node</a> <a href="/tags/node模拟登陆/" style="font-size: 12px; color: #ccc">node模拟登陆</a> <a href="/tags/vue/" style="font-size: 12px; color: #ccc">vue</a> <a href="/tags/vue-router刷新/" style="font-size: 12px; color: #ccc">vue-router刷新</a> <a href="/tags/免登陆的爬虫/" style="font-size: 12px; color: #ccc">免登陆的爬虫</a> <a href="/tags/打包，webpack初识/" style="font-size: 12px; color: #ccc">打包，webpack初识</a>
             </div>
           </div>
         
@@ -363,7 +363,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/images/avatar.gif"
+                src="/images/background.png"
                 alt="huog" />
             
               <p class="site-author-name" itemprop="name">huog</p>
@@ -399,7 +399,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -598,14 +598,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
-    
-
-    
-
-  
-
 
 
 
@@ -631,6 +623,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '7WaSgCex2B2P5jA0z0aVClvi-gzGzoHsz',
+        appKey: 'xrWjLI4LLvg1BHFMQb9H1fxY',
+        placeholder: 'Just go go',
+        avatar:'hide',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
