@@ -44,7 +44,8 @@
         <category>webpack</category>
       </categories>
       <tags>
-        <tag>打包，webpack初识</tag>
+        <tag>打包</tag>
+        <tag>webpack初识</tag>
       </tags>
   </entry>
   <entry>
