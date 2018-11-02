@@ -98,13 +98,12 @@
 <meta property="og:site_name" content="huog的个人博客">
 <meta property="og:description" content="安装webpack123456789//全局安装npm install -g webpack//安装到项目目录npm install --save-dev webpack//全局安装（同时需要安装webpack-cli，否则提示The CLI moved into a separate package: webpack-cli.）npm install webpack-cli -g//安装到项目目">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://p5tstjsfi.bkt.clouddn.com/R625CIDGWA%5BYRXN%25P5GG%29~D.png">
-<meta property="og:image" content="http://p5tstjsfi.bkt.clouddn.com/4%7BET1%5DH%5B@_@%7D%28Q%7D7J@R1EPF.png">
-<meta property="og:updated_time" content="2018-11-02T05:26:51.350Z">
+<meta property="og:image" content="http://p5tstjsfi.bkt.clouddn.com/webpack%E5%88%9D%E8%AF%861.png">
+<meta property="og:updated_time" content="2018-11-02T07:00:53.093Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack初识">
 <meta name="twitter:description" content="安装webpack123456789//全局安装npm install -g webpack//安装到项目目录npm install --save-dev webpack//全局安装（同时需要安装webpack-cli，否则提示The CLI moved into a separate package: webpack-cli.）npm install webpack-cli -g//安装到项目目">
-<meta name="twitter:image" content="http://p5tstjsfi.bkt.clouddn.com/R625CIDGWA%5BYRXN%25P5GG%29~D.png">
+<meta name="twitter:image" content="http://p5tstjsfi.bkt.clouddn.com/webpack%E5%88%9D%E8%AF%861.png">
 
 
 
@@ -423,7 +422,7 @@
       
         <h2 id="安装webpack"><a href="#安装webpack" class="headerlink" title="安装webpack"></a>安装webpack</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//全局安装</span><br><span class="line">npm install -g webpack</span><br><span class="line">//安装到项目目录</span><br><span class="line">npm install --save-dev webpack</span><br><span class="line">//全局安装（同时需要安装webpack-cli，否则提示The CLI moved into a separate package: webpack-cli.</span><br><span class="line">）</span><br><span class="line">npm install webpack-cli -g</span><br><span class="line">//安装到项目目录</span><br><span class="line">npm install --save-dev webpack-cli</span><br></pre></td></tr></table></figure>
 <p>区别：安装到项目目录运行时需要加上在node_modules中的地址，如：node_modules/.bin/webpack</p>
-<h2 id="使用webpack前的准备工作"><a href="#使用webpack前的准备工作" class="headerlink" title="使用webpack前的准备工作"></a>使用webpack前的准备工作</h2><h3 id="创建如图所示的文件："><a href="#创建如图所示的文件：" class="headerlink" title="创建如图所示的文件："></a>创建如图所示的文件：</h3><p><img src="http://p5tstjsfi.bkt.clouddn.com/R625CIDGWA%5BYRXN%25P5GG%29~D.png" alt="目录结构"></p>
+<h2 id="使用webpack前的准备工作"><a href="#使用webpack前的准备工作" class="headerlink" title="使用webpack前的准备工作"></a>使用webpack前的准备工作</h2><h3 id="创建如图所示的文件："><a href="#创建如图所示的文件：" class="headerlink" title="创建如图所示的文件："></a>创建如图所示的文件：</h3><p><img src="http://p5tstjsfi.bkt.clouddn.com/webpack%E5%88%9D%E8%AF%861.png" alt="目录结构"></p>
 <p>首先用npm init生成package.json文件，然后创建文件，public是存放浏览器读取的文件，app是存放未打包前的模块文件</p>
 <p>Greeter.js模块:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const greeter = () =&gt; &#123;</span><br><span class="line">  let greet = document.createElement(&apos;div&apos;)</span><br><span class="line">  greet.textContent = &apos;hello&apos;</span><br><span class="line">  return greet</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">module.exports = greeter()</span><br></pre></td></tr></table></figure>
@@ -433,7 +432,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name=&quot;viewport&quot;</span><br><span class="line">          content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;</span><br><span class="line">    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;</span><br><span class="line">    &lt;title&gt;webpack_sample_practice&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body id=&quot;body&quot;&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;script src=&quot;bundle.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 <p>bundle.js打包后存储的文件（index.html引入的文件）</p>
 <h2 id="（一）使用命启动令webpack"><a href="#（一）使用命启动令webpack" class="headerlink" title="（一）使用命启动令webpack"></a>（一）使用命启动令webpack</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">webpack app/main.js public/bundle.js // webpack 入口文件 打包后文件</span><br></pre></td></tr></table></figure>
-<p>这时会提示warning，这是因为没有设置mode，每次启动的时候：<br><img src="http://p5tstjsfi.bkt.clouddn.com/4%7BET1%5DH%5B@_@%7D%28Q%7D7J@R1EPF.png" alt="告警信息"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">webpack app/main.js public/bundle.js --mode development（未压缩）</span><br><span class="line">// 或者</span><br><span class="line">webpack app/main.js public/bundle.js --mode production（压缩过）</span><br></pre></td></tr></table></figure></p>
+<p>这时会提示warning，这是因为没有设置mode,所以需要：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">webpack app/main.js public/bundle.js --mode development（未压缩）</span><br><span class="line">// 或者</span><br><span class="line">webpack app/main.js public/bundle.js --mode production（压缩过）</span><br></pre></td></tr></table></figure></p>
 <p>为方便起见，我们将这两句命令放入package.json文件中：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;dev&quot;: &quot;webpack app/main.js public/bundle.js --mode development&quot;,//（未压缩）</span><br><span class="line">    &quot;build&quot;: &quot;webpack app/main.js public/bundle.js --mode production&quot; //（压缩过）</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure></p>
 <p>这样，在每次启动是只需要输入npm run dev 或者npm run build</p>
 <p>最后，打开浏览器页面就可以访问啦！</p>
@@ -519,7 +518,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/15/hello-world-2/" rel="next" title="hexo基本操作">
+              <a href="/2018/03/15/hexo基本操作/" rel="next" title="hexo基本操作">
                 <i class="fa fa-chevron-left"></i> hexo基本操作
               </a>
             
@@ -529,7 +528,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/05/node-crwl-lagou/" rel="prev" title="拉勾网爬虫并导出excel">
+              <a href="/2018/07/05/拉勾网爬虫并导出excel/" rel="prev" title="拉勾网爬虫并导出excel">
                 拉勾网爬虫并导出excel <i class="fa fa-chevron-right"></i>
               </a>
             
