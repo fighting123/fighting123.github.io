@@ -79,7 +79,7 @@
 
 
 
-  <meta name="keywords" content="node,node模拟登陆," />
+  <meta name="keywords" content="node,爬虫," />
 
 
 
@@ -91,24 +91,24 @@
 
 
 <meta name="description" content="前言前段时间看的爬虫都是不需要登录直接爬取数据，这回就试试爬取需要登录的网站信息吧，说干就干，直接就拿segmentfault做为目标！ 一、爬虫所需模块 superagent async二、分析我们首先用chrome或者其他浏览器打开segmentfault的主页，找到它的登录接口，点击登录接口，记得把Preserve log勾上，否则跳转之后找不到接口，如图（重要信息打了马赛克）：   显而易">
-<meta name="keywords" content="node,node模拟登陆">
+<meta name="keywords" content="node,爬虫">
 <meta property="og:type" content="article">
-<meta property="og:title" content="node-login-segmentfault">
+<meta property="og:title" content="node模拟登录segmentfault">
 <meta property="og:url" content="https://fighting123.github.io/2018/07/10/node-login-segmentfault/index.html">
 <meta property="og:site_name" content="huog的个人博客">
 <meta property="og:description" content="前言前段时间看的爬虫都是不需要登录直接爬取数据，这回就试试爬取需要登录的网站信息吧，说干就干，直接就拿segmentfault做为目标！ 一、爬虫所需模块 superagent async二、分析我们首先用chrome或者其他浏览器打开segmentfault的主页，找到它的登录接口，点击登录接口，记得把Preserve log勾上，否则跳转之后找不到接口，如图（重要信息打了马赛克）：   显而易">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://fighting123.github.io/img/bVbdwop">
+<meta property="og:image" content="https://segmentfault.com/img/bVbdwop?w=986&h=664">
 <meta property="og:image" content="https://fighting123.github.io/img/bVbdwc1">
 <meta property="og:image" content="https://fighting123.github.io/img/bVbdwgX">
 <meta property="og:image" content="https://fighting123.github.io/img/bVbdwia">
 <meta property="og:image" content="https://fighting123.github.io/img/bVbdxXp">
 <meta property="og:image" content="https://fighting123.github.io/img/bVbdyF8">
-<meta property="og:updated_time" content="2018-11-01T12:38:06.520Z">
+<meta property="og:updated_time" content="2018-11-02T06:31:39.174Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="node-login-segmentfault">
+<meta name="twitter:title" content="node模拟登录segmentfault">
 <meta name="twitter:description" content="前言前段时间看的爬虫都是不需要登录直接爬取数据，这回就试试爬取需要登录的网站信息吧，说干就干，直接就拿segmentfault做为目标！ 一、爬虫所需模块 superagent async二、分析我们首先用chrome或者其他浏览器打开segmentfault的主页，找到它的登录接口，点击登录接口，记得把Preserve log勾上，否则跳转之后找不到接口，如图（重要信息打了马赛克）：   显而易">
-<meta name="twitter:image" content="https://fighting123.github.io/img/bVbdwop">
+<meta name="twitter:image" content="https://segmentfault.com/img/bVbdwop?w=986&h=664">
 
 
 
@@ -144,7 +144,7 @@
 
 
 
-  <title>node-login-segmentfault | huog的个人博客</title>
+  <title>node模拟登录segmentfault | huog的个人博客</title>
   
 
 
@@ -332,7 +332,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">node-login-segmentfault</h1>
+          <h1 class="post-title" itemprop="name headline">node模拟登录segmentfault</h1>
         
 
         <div class="post-meta">
@@ -367,8 +367,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/node/" itemprop="url" rel="index">
-                    <span itemprop="name">node</span>
+                  <a href="/categories/Node/" itemprop="url" rel="index">
+                    <span itemprop="name">Node</span>
                   </a>
                 </span>
 
@@ -394,7 +394,7 @@
 
           
           
-             <span id="/2018/07/10/node-login-segmentfault/" class="leancloud_visitors" data-flag-title="node-login-segmentfault">
+             <span id="/2018/07/10/node-login-segmentfault/" class="leancloud_visitors" data-flag-title="node模拟登录segmentfault">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -430,7 +430,7 @@
 <li>superagent</li>
 <li>async<h2 id="二、分析"><a href="#二、分析" class="headerlink" title="二、分析"></a>二、分析</h2>我们首先用chrome或者其他浏览器打开segmentfault的主页，找到它的登录接口，点击登录接口，记得把Preserve log勾上，否则跳转之后找不到接口，如图（重要信息打了马赛克）：</li>
 </ul>
-<p><img src="/img/bVbdwop" alt="图片描述"></p>
+<p><img src="https://segmentfault.com/img/bVbdwop?w=986&amp;h=664" alt="image"></p>
 <p>显而易见这是一个post请求，三个参数分别是用户名、密码、和是否记住密码的标记。</p>
 <h3 id="获取Cookie里的PHPSESSID"><a href="#获取Cookie里的PHPSESSID" class="headerlink" title="获取Cookie里的PHPSESSID"></a>获取Cookie里的PHPSESSID</h3><p>仔细看请求头<code>header</code>里的<code>cookie</code>，在请求发送的时候就已经有了，我们直接把整个请求头拿过来，就直接用图中的接口和<code>header</code>登录，逐一删除<code>cookie</code>中的项，测试登录结果，最终发现只有<code>PHPSESSID</code>是必须的。这个<code>PHPSESSID</code>如何获取呢？我们可以在登录之前先访问<code>segmentfault</code>主页，将返回的<code>cookie</code>拿到，再在登录的时候加上这个<code>cookie</code>即可。<br>获取cookie的代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(cb) =&gt; &#123;</span><br><span class="line">    superagent</span><br><span class="line">      .get(&apos;https://segmentfault.com&apos;)</span><br><span class="line">      .end((err, res) =&gt; &#123;</span><br><span class="line">        if (err) console.log(err)</span><br><span class="line">        cookie = res.headers[&apos;set-cookie&apos;].join(&apos;,&apos;).split(&apos;;&apos;)[0]   // 获取PHPSESSID</span><br><span class="line">        cb(null)</span><br><span class="line">      &#125;)</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
@@ -461,7 +461,16 @@
     
     
     
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:22px;letter-spacing:6px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
 
+      
+    </div>
     <div>
       
         
@@ -471,11 +480,9 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2018/07/10/node-login-segmentfault/">node-login-segmentfault</a></p>
+  <p><span>本文标题:</span><a href="/2018/07/10/node-login-segmentfault/">node模拟登录segmentfault</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 huog 的个人博客">huog</a></p>
-  <p><span>发布时间:</span>2018年07月10日 - 14:07</p>
-  <p><span>最后更新:</span>2018年11月01日 - 20:11</p>
-  <p><span>原始链接:</span><a href="/2018/07/10/node-login-segmentfault/" title="node-login-segmentfault">https://fighting123.github.io/2018/07/10/node-login-segmentfault/</a>
+  <p><span>原始链接:</span><a href="/2018/07/10/node-login-segmentfault/" title="node模拟登录segmentfault">https://fighting123.github.io/2018/07/10/node-login-segmentfault/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://fighting123.github.io/2018/07/10/node-login-segmentfault/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>
@@ -510,7 +517,7 @@
           
             <a href="/tags/node/" rel="tag"># node</a>
           
-            <a href="/tags/node模拟登陆/" rel="tag"># node模拟登陆</a>
+            <a href="/tags/爬虫/" rel="tag"># 爬虫</a>
           
         </div>
       
@@ -630,7 +637,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -641,7 +648,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -658,6 +665,12 @@
                     <a href="https://github.com/fighting123" target="_blank" title="GitHub">
                       
                         <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://segmentfault.com/u/fighting123" target="_blank" title="Segmentfault">
+                      
+                        <i class="fa fa-fw fa-paperclip"></i>Segmentfault</a>
                   </span>
                 
             </div>
@@ -778,6 +791,8 @@
   
 
 
+  
+
 
 
 
@@ -816,6 +831,11 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="true"></script>
   
 
 
@@ -1366,5 +1386,11 @@
 
   
 
+  
+    <script type="text/javascript" color="0,0,0" opacity='0.5' zIndex="-2" count="150" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  
 </body>
 </html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+

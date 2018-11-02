@@ -79,7 +79,7 @@
 
 
 
-  <meta name="keywords" content="hexo搭建简记," />
+  <meta name="keywords" content="hexo,Next," />
 
 
 
@@ -91,14 +91,14 @@
 
 
 <meta name="description" content="博客搭建步骤简记 按照教程配好基础的博客并修改个人信息，可参考：  https://www.jianshu.com/p/d49e4684e62b  https://hexo.io/zh-cn/docs/configuration.html  https://www.jianshu.com/p/9f0e90cc32c2  更换主题为next 添加分类。标签功能 添加搜索功能，next官网上有很多第三">
-<meta name="keywords" content="hexo搭建简记">
+<meta name="keywords" content="hexo,Next">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo搭建简记">
 <meta property="og:url" content="https://fighting123.github.io/2018/03/14/hello-world/index.html">
 <meta property="og:site_name" content="huog的个人博客">
 <meta property="og:description" content="博客搭建步骤简记 按照教程配好基础的博客并修改个人信息，可参考：  https://www.jianshu.com/p/d49e4684e62b  https://hexo.io/zh-cn/docs/configuration.html  https://www.jianshu.com/p/9f0e90cc32c2  更换主题为next 添加分类。标签功能 添加搜索功能，next官网上有很多第三">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-01T12:42:03.991Z">
+<meta property="og:updated_time" content="2018-11-02T06:25:52.853Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo搭建简记">
 <meta name="twitter:description" content="博客搭建步骤简记 按照教程配好基础的博客并修改个人信息，可参考：  https://www.jianshu.com/p/d49e4684e62b  https://hexo.io/zh-cn/docs/configuration.html  https://www.jianshu.com/p/9f0e90cc32c2  更换主题为next 添加分类。标签功能 添加搜索功能，next官网上有很多第三">
@@ -360,8 +360,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/其他/" itemprop="url" rel="index">
-                    <span itemprop="name">其他</span>
+                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
                   </a>
                 </span>
 
@@ -435,15 +435,32 @@
 <li>设置头像(两张存储位置对应不用的文件夹名称，需要注意，然后将主题的avatar的注释放开并且填写对应位置)</li>
 <li>设置icon，在阿里妈妈矢量库寻找合适图像，下载16<em>16和32</em>32的png格式，将next主题下的favicon图片更换掉</li>
 <li>解决github+Hexo的博客多终端同步问题(<a href="https://www.jianshu.com/p/6fb0b287f950" target="_blank" rel="noopener">https://www.jianshu.com/p/6fb0b287f950</a>)</li>
-<li>剩下的各种详情都参照第一条<br>发布文章要用gitbash，用终端会报错<br>发布文章完成后记得上传到git的hexo分支，保存源代码</li>
+<li>剩下的各种详情都参考第一条（有时间在统一整理）</li>
+<li>添加动态背景（<a href="https://huur.cn/res/413.html）注意：这篇文章的写法有问题，更正之后可以运行，代码如下：" target="_blank" rel="noopener">https://huur.cn/res/413.html）注意：这篇文章的写法有问题，更正之后可以运行，代码如下：</a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if (theme.canvas_nest) %&#125;</span><br><span class="line">    &lt;script type=&quot;text/javascript&quot; color=&quot;0,0,0&quot; opacity=&apos;0.4&apos; zIndex=&quot;-2&quot; count=&quot;66&quot; src=&quot;//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">  &#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
+<p>并把themes/next/_config.yml文件下的两个canvas_nest都设置为true即可</p>
+<ol>
+<li>社交连接等icon都是出自fontawesome的官网<a href="https://fontawesome.com/?from=io，在这里寻找合适的icon在config里设置即可" target="_blank" rel="noopener">https://fontawesome.com/?from=io，在这里寻找合适的icon在config里设置即可</a></li>
+<li>添加点击出现小心心（<a href="https://asdfv1929.github.io/2018/05/25/baidu-share/）,效果没有透明度不美观，我在源码中将透明度改成了0.8" target="_blank" rel="noopener">https://asdfv1929.github.io/2018/05/25/baidu-share/）,效果没有透明度不美观，我在源码中将透明度改成了0.8</a><br>发布文章要用gitbash，用终端会报错</li>
+</ol>
+<p>发布文章完成后记得上传到git的hexo分支，保存源代码</p>
 
       
     </div>
     
     
     
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:22px;letter-spacing:6px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
 
+      
+    </div>
     <div>
       
         
@@ -455,8 +472,6 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <p><span>本文标题:</span><a href="/2018/03/14/hello-world/">hexo搭建简记</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 huog 的个人博客">huog</a></p>
-  <p><span>发布时间:</span>2018年03月14日 - 10:03</p>
-  <p><span>最后更新:</span>2018年11月01日 - 20:11</p>
   <p><span>原始链接:</span><a href="/2018/03/14/hello-world/" title="hexo搭建简记">https://fighting123.github.io/2018/03/14/hello-world/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://fighting123.github.io/2018/03/14/hello-world/"  aria-label="复制成功！"></i></span>
   </p>
@@ -490,7 +505,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo搭建简记/" rel="tag"># hexo搭建简记</a>
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/Next/" rel="tag"># Next</a>
           
         </div>
       
@@ -606,7 +623,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -617,7 +634,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -634,6 +651,12 @@
                     <a href="https://github.com/fighting123" target="_blank" title="GitHub">
                       
                         <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://segmentfault.com/u/fighting123" target="_blank" title="Segmentfault">
+                      
+                        <i class="fa fa-fw fa-paperclip"></i>Segmentfault</a>
                   </span>
                 
             </div>
@@ -754,6 +777,8 @@
   
 
 
+  
+
 
 
 
@@ -792,6 +817,11 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="true"></script>
   
 
 
@@ -1342,5 +1372,11 @@
 
   
 
+  
+    <script type="text/javascript" color="0,0,0" opacity='0.5' zIndex="-2" count="150" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  
 </body>
 </html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+

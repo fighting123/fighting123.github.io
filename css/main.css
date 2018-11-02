@@ -1660,11 +1660,10 @@ pre .javascript .function {
   font-family: UKIJ Ekran;
 }
 .my_post_copyright {
-  width: 85%;
-  max-width: 45em;
+  max-width: 75em;
   margin: 2.8em auto 0;
   padding: 0.5em 1em;
-  border: 1px solid #d3d3d3;
+  border-left: 3px solid #d3d3d3;
   font-size: 0.93rem;
   line-height: 1.6em;
   word-break: break-all;
@@ -1874,7 +1873,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8cffab;
+  background: #7a4201;
 }
 .links-of-blogroll {
   font-size: 13px;
