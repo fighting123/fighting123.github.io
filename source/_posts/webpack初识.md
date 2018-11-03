@@ -1,8 +1,9 @@
 ---
 title: webpack初识
 date: 2018-03-19 16:57:00
-categories: 打包
-tags: webpack
+categories: Webpack
+tags: [打包, Webpack]
+copyright : ture
 ---
 ## 安装webpack
 
@@ -22,7 +23,7 @@ npm install --save-dev webpack-cli
 
 ## 使用webpack前的准备工作
 ### 创建如图所示的文件：
-![目录结构](http://p5tstjsfi.bkt.clouddn.com/R625CIDGWA%5BYRXN%25P5GG%29~D.png)
+![目录结构](http://p5tstjsfi.bkt.clouddn.com/webpack%E5%88%9D%E8%AF%861.png)
 
 首先用npm init生成package.json文件，然后创建文件，public是存放浏览器读取的文件，app是存放未打包前的模块文件
 
@@ -66,8 +67,7 @@ bundle.js打包后存储的文件（index.html引入的文件）
 ```
 webpack app/main.js public/bundle.js // webpack 入口文件 打包后文件
 ```
-这时会提示warning，这是因为没有设置mode，每次启动的时候：
-![告警信息](http://p5tstjsfi.bkt.clouddn.com/4%7BET1%5DH%5B@_@%7D%28Q%7D7J@R1EPF.png)
+这时会提示warning，这是因为没有设置mode,所以需要：
 ```
 webpack app/main.js public/bundle.js --mode development（未压缩）
 // 或者

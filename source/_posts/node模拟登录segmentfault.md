@@ -1,7 +1,9 @@
 ---
-title: node-login-segmentfault
-date: 2018-07-10 14:14:07
-tags:
+title: node模拟登录segmentfault
+date: {{ date }}
+categories: Node
+tags: [node, 爬虫]
+copyright : ture
 ---
 ## 前言 ##
 前段时间看的爬虫都是不需要登录直接爬取数据，这回就试试爬取需要登录的网站信息吧，说干就干，直接就拿segmentfault做为目标！
@@ -13,7 +15,7 @@ tags:
 ## 二、分析 ##
 我们首先用chrome或者其他浏览器打开segmentfault的主页，找到它的登录接口，点击登录接口，记得把Preserve log勾上，否则跳转之后找不到接口，如图（重要信息打了马赛克）：
 
-![图片描述][1]
+![image](http://p5tstjsfi.bkt.clouddn.com/node%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95segmentfault1.png)
 
 显而易见这是一个post请求，三个参数分别是用户名、密码、和是否记住密码的标记。
 ### 获取Cookie里的PHPSESSID ###
@@ -34,16 +36,16 @@ tags:
 ### 获取Query String Paramsters里的 _ 参数 ###
 还有一个参数需要注意：接口中的`Query String Paramsters`的`_`参数，那么这个参数是怎么来的呢？在返回的`response`的`header`里寻找并没有找到它的踪迹，所以猜想它应该是隐藏在源码里，我们直接在`chrome`控制台的`source`下全局搜索`_=`（`source`顶部右键选择`search in all files`即可出现全局搜索框）,逐一排查可能性：
 
-![图片描述][2]
+![图片描述](http://p5tstjsfi.bkt.clouddn.com/node%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95segmentfault2.png)
 
-![图片描述][3]
+![图片描述](http://p5tstjsfi.bkt.clouddn.com/node%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95segmentfault3.png)
 排查过程中发现箭头所指的`ajaxSend`函数好像和我们需要的有关系：它紧邻的下面的`delegate`函数内容应该就是登陆有关的内容，通过`/api/user/?do=login`和`submit`等就可以清楚的看出，这个函数中的`url`是从`n.attr('action')`拿到的，猜测这个`n.__`肯定和请求中的`Query String`参数脱不了关系。正好这个`ajaxSend`函数中就有`n.__`,也正好验证了我们刚才的推测，分析这行代码：
 ```
 n.url.indexOf("?") === -1 ? n.url = n.url + "?_=" + i._ : n.url = n.url + "&_=" + i._
 ```
 `n.url`默认是`n.url + "?_=" + i._` ，那么这个`i.__`应该就是最终boss，就在这个文件中找到定义`i`的代码，如上图箭头所指，继续全局搜索`SF.token`,最终在`index.html`中找了生成它的代码，包含在一个`script`中，如图：
 
-![图片描述][4]
+![图片描述](http://p5tstjsfi.bkt.clouddn.com/node%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95segmentfault4.png)
 
 找到来源就简单了，我们仍然是在登录直接先访问主页，将整个主页的html代码拿到，然后将这个script的内容取出来不就行了，哈哈，好开心~
 获取script的代码如下：
@@ -101,7 +103,7 @@ exports.getRandom = getRandom
   },
 ```
 终于返回200了，美滋滋，然后我们继续~比如我我想用代码修改个人主页的个人描述内容，首先我们先找到相关接口，如图：
-![图片描述][5]
+![图片描述](http://p5tstjsfi.bkt.clouddn.com/node%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95segmentfault5.png)
 
 这个post请求的参数description就是个人描述的所填写的新的内容，我们直接用superagent调用这个接口
 ```
@@ -129,7 +131,7 @@ exports.getRandom = getRandom
 ```
 返回状态码200，然后直接去浏览上的主页刷新下，可以看到个人描述的内容已经成功更新了！
 
-![图片描述][6]
+![图片描述](http://p5tstjsfi.bkt.clouddn.com/node%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95segmentfault6.png)
 ## 总结 ##
 
  1. 打开`segmentfault`主页并登陆，找到登录请求的接口并分析
