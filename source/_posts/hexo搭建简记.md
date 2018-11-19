@@ -17,6 +17,9 @@ copyright : true
     https://hexo.io/zh-cn/docs/configuration.html
 
     https://www.jianshu.com/p/9f0e90cc32c2
+    
+    https://www.jianshu.com/p/f054333ac9e6(酷炫效果的总结)
+    
 2. 更换主题为next（参考1）
 3. 添加分类。标签功能（参考1）
 4. 添加搜索功能，next官网上有很多第三方搜索服务，我用的是Local Search，具体可以按照教程来
