@@ -90,18 +90,18 @@
 
 
 
-<meta name="description" content="关于主页点击跳转到详情页无法获取id问题点击具体的文章时，无法获取到此文章的id，除非分析Dom结构，但是Vue是基于数据驱动的，应对充分尊重此点。所以在v-for生成文章列表的时候添加点击事件，将本身点击文章标题触发的事件放到整个组件上，这个时候是可以轻松获取的具体点击哪个文章的id的12345&amp;lt;el-main&amp;gt;      &amp;lt;div v-for=&amp;quot;(message,">
+<meta name="description" content="项目前端代码地址：https://github.com/fighting123/my_blog_FE 项目后台代码地址：https://github.com/fighting123/my_blog_BE   关于主页点击跳转到详情页无法获取id问题点击具体的文章时，无法获取到此文章的id，除非分析Dom结构，但是Vue是基于数据驱动的，应对充分尊重此点。所以在v-for生成文章列表的时候添加点">
 <meta name="keywords" content="博客前后台,express个人博客,笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于Express&amp;&amp;MongoDb&amp;&amp;vue全家桶&amp;&amp;axios搭建个人博客笔记(三)">
 <meta property="og:url" content="https://fighting123.github.io/2018/04/01/基于Express-MongoDb-vue全家桶-axios搭建个人博客笔记-三/index.html">
 <meta property="og:site_name" content="huog的个人博客">
-<meta property="og:description" content="关于主页点击跳转到详情页无法获取id问题点击具体的文章时，无法获取到此文章的id，除非分析Dom结构，但是Vue是基于数据驱动的，应对充分尊重此点。所以在v-for生成文章列表的时候添加点击事件，将本身点击文章标题触发的事件放到整个组件上，这个时候是可以轻松获取的具体点击哪个文章的id的12345&amp;lt;el-main&amp;gt;      &amp;lt;div v-for=&amp;quot;(message,">
+<meta property="og:description" content="项目前端代码地址：https://github.com/fighting123/my_blog_FE 项目后台代码地址：https://github.com/fighting123/my_blog_BE   关于主页点击跳转到详情页无法获取id问题点击具体的文章时，无法获取到此文章的id，除非分析Dom结构，但是Vue是基于数据驱动的，应对充分尊重此点。所以在v-for生成文章列表的时候添加点">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-19T12:33:44.185Z">
+<meta property="og:updated_time" content="2018-11-19T12:38:09.805Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于Express&amp;&amp;MongoDb&amp;&amp;vue全家桶&amp;&amp;axios搭建个人博客笔记(三)">
-<meta name="twitter:description" content="关于主页点击跳转到详情页无法获取id问题点击具体的文章时，无法获取到此文章的id，除非分析Dom结构，但是Vue是基于数据驱动的，应对充分尊重此点。所以在v-for生成文章列表的时候添加点击事件，将本身点击文章标题触发的事件放到整个组件上，这个时候是可以轻松获取的具体点击哪个文章的id的12345&amp;lt;el-main&amp;gt;      &amp;lt;div v-for=&amp;quot;(message,">
+<meta name="twitter:description" content="项目前端代码地址：https://github.com/fighting123/my_blog_FE 项目后台代码地址：https://github.com/fighting123/my_blog_BE   关于主页点击跳转到详情页无法获取id问题点击具体的文章时，无法获取到此文章的id，除非分析Dom结构，但是Vue是基于数据驱动的，应对充分尊重此点。所以在v-for生成文章列表的时候添加点">
 
 
 
@@ -420,7 +420,13 @@
       
 
       
-        <h3 id="关于主页点击跳转到详情页无法获取id问题"><a href="#关于主页点击跳转到详情页无法获取id问题" class="headerlink" title="关于主页点击跳转到详情页无法获取id问题"></a>关于主页点击跳转到详情页无法获取id问题</h3><p>点击具体的文章时，无法获取到此文章的id，除非分析Dom结构，但是Vue是基于数据驱动的，应对充分尊重此点。所以在v-for生成文章列表的时候添加点击事件，将本身点击文章标题触发的事件放到整个组件上，这个时候是可以轻松获取的具体点击哪个文章的id的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;el-main&gt;</span><br><span class="line">      &lt;div v-for=&quot;(message, index) in messageList&quot; :key=&quot;index&quot; @click.once=&quot;detailHandle(message._id)&quot;&gt;</span><br><span class="line">        &lt;Posts :message=&quot;message&quot; @getOnePost=&quot;showOnePost&quot; @getPostList=&quot;showList&quot;&gt;&lt;/Posts&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    &lt;/el-main&gt;</span><br></pre></td></tr></table></figure></p>
+        <blockquote>
+<ul>
+<li>项目前端代码地址：<a href="https://github.com/fighting123/my_blog_FE" target="_blank" rel="noopener">https://github.com/fighting123/my_blog_FE</a></li>
+<li>项目后台代码地址：<a href="https://github.com/fighting123/my_blog_BE" target="_blank" rel="noopener">https://github.com/fighting123/my_blog_BE</a></li>
+</ul>
+</blockquote>
+<h3 id="关于主页点击跳转到详情页无法获取id问题"><a href="#关于主页点击跳转到详情页无法获取id问题" class="headerlink" title="关于主页点击跳转到详情页无法获取id问题"></a>关于主页点击跳转到详情页无法获取id问题</h3><p>点击具体的文章时，无法获取到此文章的id，除非分析Dom结构，但是Vue是基于数据驱动的，应对充分尊重此点。所以在v-for生成文章列表的时候添加点击事件，将本身点击文章标题触发的事件放到整个组件上，这个时候是可以轻松获取的具体点击哪个文章的id的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;el-main&gt;</span><br><span class="line">      &lt;div v-for=&quot;(message, index) in messageList&quot; :key=&quot;index&quot; @click.once=&quot;detailHandle(message._id)&quot;&gt;</span><br><span class="line">        &lt;Posts :message=&quot;message&quot; @getOnePost=&quot;showOnePost&quot; @getPostList=&quot;showList&quot;&gt;&lt;/Posts&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    &lt;/el-main&gt;</span><br></pre></td></tr></table></figure></p>
 <p>但是这个要注意得事子组件posts内元素的所有点击事件要加上事件修饰符.stop防止事件冒泡触发详情事件。</p>
 <h3 id="对于详情页和主页的复用问题："><a href="#对于详情页和主页的复用问题：" class="headerlink" title="对于详情页和主页的复用问题："></a>对于详情页和主页的复用问题：</h3><ol>
 <li>详情页和主页复用一个页面，但是刷新是总是存在头像不对应或者文章文章标题可以二次点击等各种问题，之后使用个比较笨的方法，在posts组件中路由变化时都强制刷新页面，这样数据可以重新渲染<br>++<em>(忽然想到vue的计算属性computed，这样既解决了img的src不能自动计算而不更新图片的问题，而且不用强制刷新页面)</em>++</li>
