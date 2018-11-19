@@ -1,7 +1,7 @@
 ---
 title: webpack初识
 date: 2018-03-19 16:57:00
-categories: Webpack
+categories: WebPack
 tags: [打包, Webpack]
 copyright : ture
 ---
