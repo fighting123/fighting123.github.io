@@ -90,18 +90,18 @@
 
 
 
-<meta name="description" content="项目前端代码地址：https://github.com/fighting123/my_blog_FE 项目后台代码地址：https://github.com/fighting123/my_blog_BE花了好几天时间终于解决了这个可能在别人看来十分简单的问题，毕竟第一次上手后台，很多东西还是不懂得，加油！先来一个参考链接：https://www.cnblogs.com/thingk/archi">
+<meta name="description" content="项目前端代码地址：https://github.com/fighting123/my_blog_FE 项目后台代码地址：https://github.com/fighting123/my_blog_BE   花了好几天时间终于解决了这个可能在别人看来十分简单的问题，毕竟第一次上手后台，很多东西还是不懂得，加油！先来一个参考链接：https://www.cnblogs.com/thingk/ar">
 <meta name="keywords" content="博客前后台,express个人博客,笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于Express&amp;&amp;MongoDb&amp;&amp;vue全家桶&amp;&amp;axios搭建个人博客笔记(二)">
 <meta property="og:url" content="https://fighting123.github.io/2018/03/28/基于Express-MongoDb-vue全家桶-axios搭建个人博客笔记-二/index.html">
 <meta property="og:site_name" content="huog的个人博客">
-<meta property="og:description" content="项目前端代码地址：https://github.com/fighting123/my_blog_FE 项目后台代码地址：https://github.com/fighting123/my_blog_BE花了好几天时间终于解决了这个可能在别人看来十分简单的问题，毕竟第一次上手后台，很多东西还是不懂得，加油！先来一个参考链接：https://www.cnblogs.com/thingk/archi">
+<meta property="og:description" content="项目前端代码地址：https://github.com/fighting123/my_blog_FE 项目后台代码地址：https://github.com/fighting123/my_blog_BE   花了好几天时间终于解决了这个可能在别人看来十分简单的问题，毕竟第一次上手后台，很多东西还是不懂得，加油！先来一个参考链接：https://www.cnblogs.com/thingk/ar">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-19T12:38:09.777Z">
+<meta property="og:updated_time" content="2018-11-19T12:40:21.384Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于Express&amp;&amp;MongoDb&amp;&amp;vue全家桶&amp;&amp;axios搭建个人博客笔记(二)">
-<meta name="twitter:description" content="项目前端代码地址：https://github.com/fighting123/my_blog_FE 项目后台代码地址：https://github.com/fighting123/my_blog_BE花了好几天时间终于解决了这个可能在别人看来十分简单的问题，毕竟第一次上手后台，很多东西还是不懂得，加油！先来一个参考链接：https://www.cnblogs.com/thingk/archi">
+<meta name="twitter:description" content="项目前端代码地址：https://github.com/fighting123/my_blog_FE 项目后台代码地址：https://github.com/fighting123/my_blog_BE   花了好几天时间终于解决了这个可能在别人看来十分简单的问题，毕竟第一次上手后台，很多东西还是不懂得，加油！先来一个参考链接：https://www.cnblogs.com/thingk/ar">
 
 
 
@@ -423,9 +423,10 @@
         <blockquote>
 <ul>
 <li>项目前端代码地址：<a href="https://github.com/fighting123/my_blog_FE" target="_blank" rel="noopener">https://github.com/fighting123/my_blog_FE</a></li>
-<li>项目后台代码地址：<a href="https://github.com/fighting123/my_blog_BE" target="_blank" rel="noopener">https://github.com/fighting123/my_blog_BE</a><br>花了好几天时间终于解决了这个可能在别人看来十分简单的问题，毕竟第一次上手后台，很多东西还是不懂得，加油！先来一个参考链接：<br><a href="https://www.cnblogs.com/thingk/archive/2013/11/25/3434032.html" target="_blank" rel="noopener">https://www.cnblogs.com/thingk/archive/2013/11/25/3434032.html</a></li>
+<li>项目后台代码地址：<a href="https://github.com/fighting123/my_blog_BE" target="_blank" rel="noopener">https://github.com/fighting123/my_blog_BE</a></li>
 </ul>
 </blockquote>
+<p>花了好几天时间终于解决了这个可能在别人看来十分简单的问题，毕竟第一次上手后台，很多东西还是不懂得，加油！先来一个参考链接：<br><a href="https://www.cnblogs.com/thingk/archive/2013/11/25/3434032.html" target="_blank" rel="noopener">https://www.cnblogs.com/thingk/archive/2013/11/25/3434032.html</a></p>
 <h2 id="首先是注册页面的图片上传"><a href="#首先是注册页面的图片上传" class="headerlink" title="首先是注册页面的图片上传"></a>首先是注册页面的图片上传</h2><p>用的是element的上传组件，action参数是图片上传的地址，本身是想和其他用户注册时的其他参数一齐上传，但是这是有问题的，图片上传应该是需要一个特殊的接口，将图片保存到服务器，然后将这个图片的地址保存到数据库中，每次需要时通过数据库的地址查找对应的图片，代码如下：</p>
 <p>前端代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">    &lt;el-upload</span><br><span class="line">    ref=&quot;upload&quot;</span><br><span class="line">    class=&quot;avatar-uploader&quot;</span><br><span class="line">    action=&quot;http://localhost:8080/api/signup/image&quot;</span><br><span class="line">    name=&quot;avatar&quot;</span><br><span class="line">    :show-file-list=&quot;false&quot;</span><br><span class="line">    :auto-upload=&quot;false&quot;</span><br><span class="line">    :on-change=&quot;handleAvatarSuccess&quot;</span><br><span class="line">    :before-upload=&quot;beforeAvatarUpload&quot;&gt;</span><br><span class="line">    &lt;img v-if=&quot;imageUrl&quot; :src=&quot;imageUrl&quot; class=&quot;avatar&quot;&gt;</span><br><span class="line">    &lt;i v-else class=&quot;el-icon-plus avatar-uploader-icon&quot;&gt;&lt;/i&gt;</span><br><span class="line">&lt;/el-upload&gt;</span><br></pre></td></tr></table></figure></p>
 <p>关于imgUrl：</p>
