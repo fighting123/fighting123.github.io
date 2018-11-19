@@ -3,7 +3,7 @@ title: hexo基本操作
 date: {{ date }}
 categories: Hexo
 tags: [hexo]
-copyright : ture
+copyright : true
 ---
 
 ### 创建文章

@@ -3,7 +3,7 @@ title: mysql学习笔记
 date: 2018-11-19 14:19:13
 categories: MySQL
 tags: [数据库, mysql]
-copyright : ture
+copyright : true
 ---
 
 ### 基本了解：

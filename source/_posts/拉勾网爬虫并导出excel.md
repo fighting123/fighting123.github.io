@@ -1,9 +1,9 @@
 ---
 title: 拉勾网爬虫并导出excel
 date: {{ date }}
-categories: Node
+categories: Node.js
 tags: [node, 爬虫]
-copyright : ture
+copyright : true
 ---
 ## 前言 ##
 

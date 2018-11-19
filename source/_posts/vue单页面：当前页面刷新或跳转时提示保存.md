@@ -3,7 +3,7 @@ title: vue单页面：当前页面刷新或跳转时提示保存
 date: 2018-11-01 19:49:36
 categories: Vue
 tags: [Vue, Vue-Router]
-copyright : ture
+copyright : true
 ---
 
 ### 前言

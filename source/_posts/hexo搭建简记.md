@@ -3,7 +3,7 @@ title: hexo搭建简记
 date: {{ date }}
 categories: Hexo
 tags: [hexo, Next]
-copyright : ture
+copyright : true
 ---
 
 ## 博客搭建步骤简记

@@ -1,9 +1,9 @@
 ---
 title: 通过周报系统的登录学到的session和cookie
 date: 2018-11-19 14:35:36
-categories: Koa2
+categories: koa2
 tags: [session和cookie, 用户免登陆]
-copyright : ture
+copyright : true
 ---
 ## 关于session和cookie基础介绍：
 
@@ -20,8 +20,6 @@ session是基于cookie实现的,session在被创建后,会生成一个**唯一�
 ### session过期时间
 session也有过期时间，默认为20分钟，20分钟后自动清除session。当session过期后，浏览器发送过来的cookie就无法在服务器端找到对应的session，因为session已经不存在，此时需要重新登录并设置session，重复过程一
 
-
-[可参考：http://blog.csdn.net/qq_28701323/article/details/51644736](http://blog.csdn.net/qq_28701323/article/details/51644736)
 
 ## 结合具体项目代码谈谈：
 
