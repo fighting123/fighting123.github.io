@@ -90,18 +90,18 @@
 
 
 
-<meta name="description" content="引言 github上的demo别人需要预览的时候都得clone下来运行才可以，不能外网访问，不利于demo效果的展示，其实将项目打包部署到GitHub Pages上就可以完美解决这个问题了。  用到的库 gh-pages  部署过程1. 创建项目仓库常规操作创建git仓库即可，可参考：https://blog.csdn.net/zoucanfa/article/details/77725839 2">
+<meta name="description" content="引言 github上的demo别人需要预览的时候都得clone下来运行才可以，不能外网访问，不利于demo效果的展示，其实将项目打包部署到GitHub Pages上就可以完美解决这个问题了。  用到的库 gh-pages 安装：yarn add gh-pages  部署过程创建项目仓库常规操作创建git仓库即可，可参考：https://blog.csdn.net/zoucanfa/article/">
 <meta name="keywords" content="github,gh-pages">
 <meta property="og:type" content="article">
 <meta property="og:title" content="github的gh-pages分支展示项目页面">
 <meta property="og:url" content="https://fighting123.github.io/2018/11/21/github的gh-pages分支展示项目页面/index.html">
 <meta property="og:site_name" content="huog的个人博客">
-<meta property="og:description" content="引言 github上的demo别人需要预览的时候都得clone下来运行才可以，不能外网访问，不利于demo效果的展示，其实将项目打包部署到GitHub Pages上就可以完美解决这个问题了。  用到的库 gh-pages  部署过程1. 创建项目仓库常规操作创建git仓库即可，可参考：https://blog.csdn.net/zoucanfa/article/details/77725839 2">
+<meta property="og:description" content="引言 github上的demo别人需要预览的时候都得clone下来运行才可以，不能外网访问，不利于demo效果的展示，其实将项目打包部署到GitHub Pages上就可以完美解决这个问题了。  用到的库 gh-pages 安装：yarn add gh-pages  部署过程创建项目仓库常规操作创建git仓库即可，可参考：https://blog.csdn.net/zoucanfa/article/">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-21T02:09:40.976Z">
+<meta property="og:updated_time" content="2018-11-23T09:12:17.101Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github的gh-pages分支展示项目页面">
-<meta name="twitter:description" content="引言 github上的demo别人需要预览的时候都得clone下来运行才可以，不能外网访问，不利于demo效果的展示，其实将项目打包部署到GitHub Pages上就可以完美解决这个问题了。  用到的库 gh-pages  部署过程1. 创建项目仓库常规操作创建git仓库即可，可参考：https://blog.csdn.net/zoucanfa/article/details/77725839 2">
+<meta name="twitter:description" content="引言 github上的demo别人需要预览的时候都得clone下来运行才可以，不能外网访问，不利于demo效果的展示，其实将项目打包部署到GitHub Pages上就可以完美解决这个问题了。  用到的库 gh-pages 安装：yarn add gh-pages  部署过程创建项目仓库常规操作创建git仓库即可，可参考：https://blog.csdn.net/zoucanfa/article/">
 
 
 
@@ -425,49 +425,59 @@
 </blockquote>
 <h2 id="用到的库"><a href="#用到的库" class="headerlink" title="用到的库"></a>用到的库</h2><ul>
 <li><a href="https://www.npmjs.com/package/gh-pages" target="_blank" rel="noopener">gh-pages</a></li>
+<li>安装：<code>yarn add gh-pages</code></li>
 </ul>
-<h2 id="部署过程"><a href="#部署过程" class="headerlink" title="部署过程"></a>部署过程</h2><h3 id="1-创建项目仓库"><a href="#1-创建项目仓库" class="headerlink" title="1. 创建项目仓库"></a>1. 创建项目仓库</h3><p>常规操作创建git仓库即可，可参考：<a href="https://blog.csdn.net/zoucanfa/article/details/77725839" target="_blank" rel="noopener">https://blog.csdn.net/zoucanfa/article/details/77725839</a></p>
-<h3 id="2-在本地的项目文件下执行以下命令："><a href="#2-在本地的项目文件下执行以下命令：" class="headerlink" title="2. 在本地的项目文件下执行以下命令："></a>2. 在本地的项目文件下执行以下命令：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m &apos;message&apos;</span><br><span class="line">$ git remote add origin &lt;url&gt;</span><br><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
-<h3 id="3-修改本地的package-json文件及相关配置"><a href="#3-修改本地的package-json文件及相关配置" class="headerlink" title="3. 修改本地的package.json文件及相关配置"></a>3. 修改本地的package.json文件及相关配置</h3><p>由于React项目和Vue项目打包后的文件夹不一样，所以配置也稍稍有点不同</p>
+<h2 id="部署过程"><a href="#部署过程" class="headerlink" title="部署过程"></a>部署过程</h2><h3 id="创建项目仓库"><a href="#创建项目仓库" class="headerlink" title="创建项目仓库"></a>创建项目仓库</h3><p>常规操作创建git仓库即可，可参考：<a href="https://blog.csdn.net/zoucanfa/article/details/77725839" target="_blank" rel="noopener">https://blog.csdn.net/zoucanfa/article/details/77725839</a></p>
+<h3 id="在本地的项目文件下执行以下命令"><a href="#在本地的项目文件下执行以下命令" class="headerlink" title="在本地的项目文件下执行以下命令"></a>在本地的项目文件下执行以下命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m &apos;message&apos;</span><br><span class="line">$ git remote add origin &lt;url&gt;</span><br><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
+<h3 id="修改本地的package-json文件及相关配置"><a href="#修改本地的package-json文件及相关配置" class="headerlink" title="修改本地的package.json文件及相关配置"></a>修改本地的package.json文件及相关配置</h3><p>由于React项目和Vue项目打包后的文件夹不一样，所以配置也稍稍有点不同</p>
 <ul>
-<li><p>React：</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&quot;homepage&quot;: &quot;https://fighting123.github.io/react_manage_system&quot;,</span><br><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">    + &quot;predeploy&quot;: &quot;npm run build&quot;,   // 对应的deploy之前的钩子</span><br><span class="line">    + &quot;deploy&quot;: &quot;gh-pages -d build&quot;  // deploy名字可以随意</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-</li>
+<li>React：</li>
 </ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&quot;homepage&quot;: &quot;https://fighting123.github.io/react_manage_system&quot;,</span><br><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">    + &quot;predeploy&quot;: &quot;npm run build&quot;,   // 对应的deploy之前的钩子</span><br><span class="line">    + &quot;deploy&quot;: &quot;gh-pages -d build&quot;  // deploy名字可以随意</span><br><span class="line"> &#125;,</span><br></pre></td></tr></table></figure>
 <ul>
-<li><p>Vue:</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">    + &quot;predeploy&quot;: &quot;npm run dist&quot;,  // 或者yarn run dist</span><br><span class="line">    + &quot;deploy&quot;: &quot;gh-pages -d dist&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-<p>  并修改config/index.js:</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">build: &#123;</span><br><span class="line">    assetsPublicPath: &apos;&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
+<li>Vue:</li>
 </ul>
-<h3 id="4-部署"><a href="#4-部署" class="headerlink" title="4. 部署"></a>4. 部署</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn run deploy   // 或npm run deploy</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">    + &quot;predeploy&quot;: &quot;npm run dist&quot;,  // 或者yarn run dist</span><br><span class="line">    + &quot;deploy&quot;: &quot;gh-pages -d dist&quot;</span><br><span class="line"> &#125;,</span><br></pre></td></tr></table></figure>
+<pre><code>并修改config/index.js:
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">build: &#123;</span><br><span class="line">   assetsPublicPath: &apos;&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn deploy   // 或npm run deploy</span><br></pre></td></tr></table></figure>
 <p><em>部署过程真的感觉超级慢。。。</em></p>
-<p>部署成功后，对应远程上就有新的gh-pages分支了，打开<a href="https://fighting123.github.io/react_manage_system即可看到对应的页面了。">https://fighting123.github.io/react_manage_system即可看到对应的页面了。</a></p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><ul>
-<li><p>运行yarn run deploy过程中可能会报错</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fatal: A branch named &apos;gh-pages&apos; already exists.</span><br></pre></td></tr></table></figure>
-<p>  官方文档上的解释是：</p>
-<p>  当处理gh-pages模块生成文件in.cache，如果由于某些原因如密码错误等卡住则不会自动清理</p>
-<p>  <strong>解决办法</strong>：</p>
-<p>  运行 ~node_modules/gh-pages/bin/gh-pages-clean 或者直接删除项目下的 ~node_modules/gh-pages/.cache文件即可</p>
+<p>部署成功后，对应远程上就有新的gh-pages分支了，修改setting上的source为gh-pages分支，然后打开<a href="https://fighting123.github.io/react_manage_system即可看到对应的页面了。">https://fighting123.github.io/react_manage_system即可看到对应的页面了。</a></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>总体来看，它的原理其实很简单，就是在当前项目仓库下自动创建一个名为gh-pages的分支，打包部署成功之后上传到这个分支的正好就是build内的静态文件，其实不怕麻烦的同学也可以不用这个库，自己一步步创建分支，上传build文件也可以实现同样的效果！</p>
+<h2 id="遇到的问题及解决方法"><a href="#遇到的问题及解决方法" class="headerlink" title="遇到的问题及解决方法"></a>遇到的问题及解决方法</h2><ol>
+<li><p>运行yarn deploy过程中可能会报错</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fatal: A branch named &apos;gh-pages&apos; already exists.</span><br></pre></td></tr></table></figure>
+<p> <strong>官方文档上的解释是：</strong></p>
+<pre><code>当处理gh-pages模块生成文件.cache，如果由于某些原因如密码错误等卡住则不会自动清理
+</code></pre><p> <strong>解决办法</strong>：</p>
+<p> 运行 ~node_modules/gh-pages/bin/gh-pages-clean 或者直接删除项目下的 ~node_modules/gh-pages/.cache文件即可</p>
 </li>
-<li><p>运行yarn run deploy过程中可能会报错</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fatal: The remote end hung up unexpectedly</span><br></pre></td></tr></table></figure>
-<p>  官方文档上的解释是：</p>
-<p>  通过 HTTP 传输 POST 数据到远程系统上的最大缓冲字节数 。当请求大于这个缓冲大小时，HTTP/1.1 和 Transfer-Encoding: chunked 用来避免在本地创建过多的压缩文件。默认是 1MiB，适用于大多数的请求</p>
-<p>  <strong>解决办法</strong>：</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.postbuffer 1048576000</span><br></pre></td></tr></table></figure>
+<li><p>运行yarn deploy过程中可能会报错</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fatal: The remote end hung up unexpectedly</span><br></pre></td></tr></table></figure>
+<p> <strong>官方文档上的解释是：</strong></p>
+<p> 通过 HTTP 传输 POST 数据到远程系统上的最大缓冲字节数 。当请求大于这个缓冲大小时，HTTP/1.1 和 Transfer-Encoding: chunked 用来避免在本地创建过多的压缩文件。默认是 1MiB，适用于大多数的请求</p>
+<p> <strong>解决办法</strong>：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.postbuffer 1048576000</span><br></pre></td></tr></table></figure>
 </li>
+<li><p>运行yarn deploy过程中可能会报错</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">could not read Username for &apos;https://github.com&apos;: No error</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<pre><code>**解决办法**：
+
+
+修改.git下的config文件的url为https://用户名:密码@github.com/fighting123/react_manage_system.git即可
+</code></pre><ol>
 <li><p>多个html文件的项目，如官网，用下面方法：</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git symbolic-ref HEAD refs/heads/gh-pages</span><br><span class="line">git add -A</span><br><span class="line">git commit -m &quot;描述&quot;</span><br><span class="line">git push origin gh-pages</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git symbolic-ref HEAD refs/heads/gh-pages</span><br><span class="line">git add -A</span><br><span class="line">git commit -m &quot;描述&quot;</span><br><span class="line">git push origin gh-pages</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-<h3 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h3><ul>
+</ol>
+<p><strong>参考文章：</strong></p>
+<ul>
 <li><a href="https://www.jianshu.com/p/9dcc6e68031e" target="_blank" rel="noopener">https://www.jianshu.com/p/9dcc6e68031e</a></li>
 <li><a href="https://www.cnblogs.com/MuYunyun/p/6082359.html" target="_blank" rel="noopener">https://www.cnblogs.com/MuYunyun/p/6082359.html</a></li>
 <li><a href="https://www.douban.com/note/668373438/" target="_blank" rel="noopener">https://www.douban.com/note/668373438/</a></li>
-<li><a href="https://www.rails365.net/movies/react-ji-qiao-2-ba-react-ying-yong-bu-shu-dao-github-pages" target="_blank" rel="noopener">https://www.rails365.net/movies/react-ji-qiao-2-ba-react-ying-yong-bu-shu-dao-github-pages</a>(把 react 应用部署到 GitHub Pages的视频)</li>
+<li><a href="https://www.rails365.net/movies/react-ji-qiao-2-ba-react-ying-yong-bu-shu-dao-github-pages" target="_blank" rel="noopener">https://www.rails365.net/movies/react-ji-qiao-2-ba-react-ying-yong-bu-shu-dao-github-pages</a> (把 react 应用部署到 GitHub Pages的视频)</li>
 </ul>
 
       
@@ -707,7 +717,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用到的库"><span class="nav-number">2.</span> <span class="nav-text">用到的库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署过程"><span class="nav-number">3.</span> <span class="nav-text">部署过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-创建项目仓库"><span class="nav-number">3.1.</span> <span class="nav-text">1. 创建项目仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-在本地的项目文件下执行以下命令："><span class="nav-number">3.2.</span> <span class="nav-text">2. 在本地的项目文件下执行以下命令：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-修改本地的package-json文件及相关配置"><span class="nav-number">3.3.</span> <span class="nav-text">3. 修改本地的package.json文件及相关配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-部署"><span class="nav-number">3.4.</span> <span class="nav-text">4. 部署</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后记"><span class="nav-number">4.</span> <span class="nav-text">后记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注意："><span class="nav-number">4.1.</span> <span class="nav-text">注意：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文章："><span class="nav-number">4.2.</span> <span class="nav-text">参考文章：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用到的库"><span class="nav-number">2.</span> <span class="nav-text">用到的库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署过程"><span class="nav-number">3.</span> <span class="nav-text">部署过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建项目仓库"><span class="nav-number">3.1.</span> <span class="nav-text">创建项目仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在本地的项目文件下执行以下命令"><span class="nav-number">3.2.</span> <span class="nav-text">在本地的项目文件下执行以下命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改本地的package-json文件及相关配置"><span class="nav-number">3.3.</span> <span class="nav-text">修改本地的package.json文件及相关配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署"><span class="nav-number">3.4.</span> <span class="nav-text">部署</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#遇到的问题及解决方法"><span class="nav-number">5.</span> <span class="nav-text">遇到的问题及解决方法</span></a></li></ol></div>
             
 
           </div>
