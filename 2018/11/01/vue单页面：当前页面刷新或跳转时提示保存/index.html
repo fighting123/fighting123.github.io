@@ -98,13 +98,13 @@
 <meta property="og:site_name" content="huog的个人博客">
 <meta property="og:description" content="前言 最近公司vue项目中有一个需求，需要在当前页面刷新或跳转时提示保存并可取消刷新，以防止填写的表单内容丢失。刚开始思考觉得很简单，直接在Router的钩子中判断就好了，但是会发现还有新的问题存在，浏览器刷新和当前页面关闭的时候无法监听，最终用window.onbeforeunload成功解决，所以用这篇文章简单记录下整个解决过程。  vue-Router的钩子：路由钩子可以分为全局的，单个路由">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://p5tstjsfi.bkt.clouddn.com/vue-router1luyou.png">
-<meta property="og:image" content="http://p5tstjsfi.bkt.clouddn.com/vue-router1%E8%B7%AF%E7%94%B1%E9%92%A9%E5%AD%90.png">
-<meta property="og:updated_time" content="2018-11-19T07:32:22.784Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/fighting123/hexo_images/master/oldArticleImages/vue-router1luyou.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/fighting123/hexo_images/master/oldArticleImages/vue-router1%E8%B7%AF%E7%94%B1%E9%92%A9%E5%AD%90.png">
+<meta property="og:updated_time" content="2019-01-03T08:06:45.754Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue单页面：当前页面刷新或跳转时提示保存">
 <meta name="twitter:description" content="前言 最近公司vue项目中有一个需求，需要在当前页面刷新或跳转时提示保存并可取消刷新，以防止填写的表单内容丢失。刚开始思考觉得很简单，直接在Router的钩子中判断就好了，但是会发现还有新的问题存在，浏览器刷新和当前页面关闭的时候无法监听，最终用window.onbeforeunload成功解决，所以用这篇文章简单记录下整个解决过程。  vue-Router的钩子：路由钩子可以分为全局的，单个路由">
-<meta name="twitter:image" content="http://p5tstjsfi.bkt.clouddn.com/vue-router1luyou.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/fighting123/hexo_images/master/oldArticleImages/vue-router1luyou.png">
 
 
 
@@ -438,7 +438,7 @@
 <p>通过beforeRouteLeave这个路由钩子，我们就可以在用户要离开此页面时候进行提示了！</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">beforeRouteLeave (to, from, next) &#123;</span><br><span class="line">    const answer = window.confirm(&apos;当前页面数据未保存，确定要离开![image](http://note.youdao.com/favicon.ico)？&apos;)</span><br><span class="line">    if (answer) &#123;</span><br><span class="line">        next()</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        next(false)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 <p>显示的提示框如下：</p>
-<p><img src="http://p5tstjsfi.bkt.clouddn.com/vue-router1luyou.png" alt="image"></p>
+<p><img src="https://raw.githubusercontent.com/fighting123/hexo_images/master/oldArticleImages/vue-router1luyou.png" alt="image"></p>
 <h3 id="监听浏览器的刷新、页面关闭事件"><a href="#监听浏览器的刷新、页面关闭事件" class="headerlink" title="监听浏览器的刷新、页面关闭事件"></a>监听浏览器的刷新、页面关闭事件</h3><p>但是，这个时候就实现了我们最终的需求了么？并没有，还有一步：用<strong>window.onbeforeunload</strong>监听浏览器的刷新事件，当然为了防止从当前单页面跳到其他页面之后，在刷新所在新的页面还会触发window上的onbeforeunload的问题，我们不仅要及时的添加onbeforeunload事件，更要及时删除此事件，下面有两种解决方法可供选择：</p>
 <ol>
 <li>通过判断它的路由是否是当前需要添加禁止刷新的页面</li>
@@ -449,7 +449,7 @@
 </li>
 </ol>
 <p>显示的提示框如下：</p>
-<p><img src="http://p5tstjsfi.bkt.clouddn.com/vue-router1%E8%B7%AF%E7%94%B1%E9%92%A9%E5%AD%90.png" alt="image"></p>
+<p><img src="https://raw.githubusercontent.com/fighting123/hexo_images/master/oldArticleImages/vue-router1%E8%B7%AF%E7%94%B1%E9%92%A9%E5%AD%90.png" alt="image"></p>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>最终，在beforeRouteLeave和onbeforeunload的共同作用下，这个刷新、跳转或者关闭等情况下需要提示保存的需求完美解决！但是，还有一点点小遗憾，就是onbeforeunload中弹框的自定义提示语设置始终无法生效，大家要是有更加合适的处理办法，欢迎多多交流指正！</p>
 
       
@@ -719,7 +719,7 @@
   <div>
     本站总访问量 <span id="busuanzi_value_site_pv"></span> 次, 访客数 <span id="busuanzi_value_site_uv"></span> 人次, 本文总阅读量 <span id="busuanzi_value_page_pv"></span> 次
   </div>
-&copy; <span itemprop="copyrightYear">2018</span>
+&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
