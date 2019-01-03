@@ -4,12 +4,7 @@
     <list default="true" id="1a1025d7-37bb-41fa-9ea7-d293218f422e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next" afterPath="$PROJECT_DIR$/themes/next" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/yilia" afterPath="$PROJECT_DIR$/themes/yilia" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/github的gh-pages分支展示项目页面.md" afterPath="$PROJECT_DIR$/source/_posts/github的gh-pages分支展示项目页面.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/node模拟登录segmentfault.md" afterPath="$PROJECT_DIR$/source/_posts/node模拟登录segmentfault.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/vue单页面：当前页面刷新或跳转时提示保存.md" afterPath="$PROJECT_DIR$/source/_posts/vue单页面：当前页面刷新或跳转时提示保存.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/webpack初识.md" afterPath="$PROJECT_DIR$/source/_posts/webpack初识.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/拉勾网爬虫并导出excel.md" afterPath="$PROJECT_DIR$/source/_posts/拉勾网爬虫并导出excel.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/hexo搭建简记.md" afterPath="$PROJECT_DIR$/source/_posts/hexo搭建简记.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,7 +24,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="418">
-                <caret line="49" column="3" lean-forward="true" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
+                <caret line="49" column="3" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -50,12 +45,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hexo搭建简记.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hexo搭建简记.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/_posts/hexo搭建简记.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="232">
-                <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+              <first_editor relative-caret-position="632">
+                <caret line="44" column="12" lean-forward="true" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -141,12 +136,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="拉勾网爬虫并导出excel.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="拉勾网爬虫并导出excel.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/拉勾网爬虫并导出excel.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="698">
-                <caret line="284" column="45" lean-forward="false" selection-start-line="284" selection-start-column="45" selection-end-line="284" selection-end-column="45" />
+              <first_editor relative-caret-position="346">
+                <caret line="268" column="8" lean-forward="true" selection-start-line="268" selection-start-column="8" selection-end-line="268" selection-end-column="8" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -244,7 +239,6 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/scaffolds/post.md" />
         <option value="$PROJECT_DIR$/themes/next/layout/_layout.swig" />
-        <option value="$PROJECT_DIR$/source/_posts/hexo搭建简记.md" />
         <option value="$PROJECT_DIR$/source/_posts/通过周报系统的登录学到的session和cookie.md" />
         <option value="$PROJECT_DIR$/source/_posts/mysql学习笔记.md" />
         <option value="$PROJECT_DIR$/source/_posts/认识react，-并简单与vue对比.md" />
@@ -258,6 +252,7 @@
         <option value="$PROJECT_DIR$/source/_posts/vue单页面：当前页面刷新或跳转时提示保存.md" />
         <option value="$PROJECT_DIR$/source/_posts/webpack初识.md" />
         <option value="$PROJECT_DIR$/source/_posts/拉勾网爬虫并导出excel.md" />
+        <option value="$PROJECT_DIR$/source/_posts/hexo搭建简记.md" />
       </list>
     </option>
   </component>
@@ -552,12 +547,12 @@
       <workItem from="1542766898149" duration="11000" />
       <workItem from="1542964301714" duration="637000" />
       <workItem from="1543289230409" duration="353000" />
-      <workItem from="1546501050937" duration="1785000" />
+      <workItem from="1546501050937" duration="2231000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96369000" />
+    <option name="totallyTimeSpent" value="96815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -907,7 +902,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="418">
-            <caret line="49" column="3" lean-forward="true" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
+            <caret line="49" column="3" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
             <folding />
           </first_editor>
           <second_editor />
@@ -927,22 +922,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/hexo搭建简记.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="232">
-            <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1015,11 +994,27 @@
     <entry file="file://$PROJECT_DIR$/source/_posts/拉勾网爬虫并导出excel.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="698">
-            <caret line="284" column="45" lean-forward="false" selection-start-line="284" selection-start-column="45" selection-end-line="284" selection-end-column="45" />
+          <first_editor relative-caret-position="346">
+            <caret line="268" column="8" lean-forward="true" selection-start-line="268" selection-start-column="8" selection-end-line="268" selection-end-column="8" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/hexo搭建简记.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="632">
+            <caret line="44" column="12" lean-forward="true" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
         </state>
       </provider>
     </entry>

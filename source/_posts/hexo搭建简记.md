@@ -41,7 +41,7 @@ copyright : true
     并把themes/next/_config.yml文件下的两个canvas_nest都设置为true即可
 15. 社交连接等icon都是出自fontawesome的官网https://fontawesome.com/?from=io，在这里寻找合适的icon在config里设置即可
 16. 添加点击出现小心心（https://asdfv1929.github.io/2018/05/25/baidu-share/）,效果没有透明度不美观，我在源码中将透明度改成了0.8
-
+17. 之前文章的图片都是存放在七牛云上，最近七牛云的测试域名全部回收，还好我的图片有备份（坑），索性直接新建个git仓库来专门存放文章的图片（省的在糟心），每个图片点击Download就可以获取链接了
 最后的最后，要注意得是：
 - 发布文章要用gitbash，用终端会报错
 
