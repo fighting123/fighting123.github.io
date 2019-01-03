@@ -23,7 +23,7 @@ npm install --save-dev webpack-cli
 
 ## 使用webpack前的准备工作
 ### 创建如图所示的文件：
-![目录结构](http://p5tstjsfi.bkt.clouddn.com/webpack%E5%88%9D%E8%AF%861.png)
+![目录结构](https://raw.githubusercontent.com/fighting123/hexo_images/master/oldArticleImages/webpack%E5%88%9D%E8%AF%861.png)
 
 首先用npm init生成package.json文件，然后创建文件，public是存放浏览器读取的文件，app是存放未打包前的模块文件
 

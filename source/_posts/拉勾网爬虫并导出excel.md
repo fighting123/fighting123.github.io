@@ -81,7 +81,7 @@ if (process.argv.length === 4) {
 ### 分析页面，找到请求地址
 首先我们打开拉勾网首页，输入查询信息（比如node），然后查看控制台，找到相关的请求，如图：
 
-![图片描述](http://p5tstjsfi.bkt.clouddn.com/%E6%8B%89%E5%8B%BE%E7%BD%91%E7%88%AC%E8%99%AB%E5%B9%B6%E5%AF%BC%E5%87%BAexcel1.png)
+![图片描述](https://raw.githubusercontent.com/fighting123/hexo_images/master/oldArticleImages/%E6%8B%89%E5%8B%BE%E7%BD%91%E7%88%AC%E8%99%AB%E5%B9%B6%E5%AF%BC%E5%87%BAexcel1.png)
 
 这个post请求`https://www.lagou.com/jobs/positionAjax.json?needAddtionalResult=false`就是我们所需要的，通过三个请求参数来获取不同的数据，简单的分析就可得知：参数`first`是标注当前是否是第一页，true为是，false为否；参数`pn`是当前的页码；参数`kd`是查询输入的内容。
 
@@ -89,7 +89,7 @@ if (process.argv.length === 4) {
 首先需要明确得是，整个程序是异步的，我们需要用async.series来依次调用。
 查看分析返回的response：
 
-![图片描述](http://p5tstjsfi.bkt.clouddn.com/%E6%8B%89%E5%8B%BE%E7%BD%91%E7%88%AC%E8%99%AB%E5%B9%B6%E5%AF%BC%E5%87%BAexcel2.png)
+![图片描述](https://raw.githubusercontent.com/fighting123/hexo_images/master/oldArticleImages/%E6%8B%89%E5%8B%BE%E7%BD%91%E7%88%AC%E8%99%AB%E5%B9%B6%E5%AF%BC%E5%87%BAexcel2.png)
 
 可以看到content.positionResult.totalCount就是我们所需要的总页数
 我们用superagent直接调用post请求，控制台会提示如下信息：
@@ -97,7 +97,7 @@ if (process.argv.length === 4) {
     {'success': False, 'msg': '您操作太频繁,请稍后再访问', 'clientIp': '122.xxx.xxx.xxx'}
 这其实是反爬虫策略之一，我们只需要给其添加一个请求头即可，请求头的获取方式很简单，如下：
 
-![图片描述](http://p5tstjsfi.bkt.clouddn.com/%E6%8B%89%E5%8B%BE%E7%BD%91%E7%88%AC%E8%99%AB%E5%B9%B6%E5%AF%BC%E5%87%BAexcel3.png)]
+![图片描述](https://raw.githubusercontent.com/fighting123/hexo_images/master/oldArticleImages/%E6%8B%89%E5%8B%BE%E7%BD%91%E7%88%AC%E8%99%AB%E5%B9%B6%E5%AF%BC%E5%87%BAexcel3.png)]
 
 然后在用superagent调用post请求，主要代码如下：
 
@@ -198,7 +198,7 @@ if (process.argv.length === 4) {
     }
 ```
 导出的json文件如下：
-![图片描述](http://p5tstjsfi.bkt.clouddn.com/%E6%8B%89%E5%8B%BE%E7%BD%91%E7%88%AC%E8%99%AB%E5%B9%B6%E5%AF%BC%E5%87%BAexcel4.png)
+![图片描述](https://raw.githubusercontent.com/fighting123/hexo_images/master/oldArticleImages/%E6%8B%89%E5%8B%BE%E7%BD%91%E7%88%AC%E8%99%AB%E5%B9%B6%E5%AF%BC%E5%87%BAexcel4.png)
 ### json文件导出为excel ###
 将json文件导出为excel有多种方式，我使用的是`node-xlsx`这个node包，这个包需要将数据按照固定的格式传入，然后导出即可，所以我们首先做的就是先拼出其所需的数据格式：
 
@@ -274,7 +274,7 @@ function exportExcel() {
 }
 ```
 导出的excel文件如下，每一页的数据都是一个sheet，比较清晰明了：
-![图片描述](http://p5tstjsfi.bkt.clouddn.com/%E6%8B%89%E5%8B%BE%E7%BD%91%E7%88%AC%E8%99%AB%E5%B9%B6%E5%AF%BC%E5%87%BAexcel5.png)
+![图片描述](https://raw.githubusercontent.com/fighting123/hexo_images/master/oldArticleImages/%E6%8B%89%E5%8B%BE%E7%BD%91%E7%88%AC%E8%99%AB%E5%B9%B6%E5%AF%BC%E5%87%BAexcel5.png)
 
 我们可以很清楚的从中看出目前西安.net的招聘情况，之后也可以考虑用更形象的图表方式展示爬到的数据，应该会更加直观！
 ## 总结 ##

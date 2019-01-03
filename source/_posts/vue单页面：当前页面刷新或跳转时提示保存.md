@@ -72,7 +72,7 @@ beforeRouteLeave (to, from, next) {
 ```
 显示的提示框如下：
 
-![image](http://p5tstjsfi.bkt.clouddn.com/vue-router1luyou.png)
+![image](https://raw.githubusercontent.com/fighting123/hexo_images/master/oldArticleImages/vue-router1luyou.png)
 
 ### 监听浏览器的刷新、页面关闭事件
 
@@ -118,6 +118,6 @@ destroyed() {
 
 显示的提示框如下：
 
-![image](http://p5tstjsfi.bkt.clouddn.com/vue-router1%E8%B7%AF%E7%94%B1%E9%92%A9%E5%AD%90.png)
+![image](https://raw.githubusercontent.com/fighting123/hexo_images/master/oldArticleImages/vue-router1%E8%B7%AF%E7%94%B1%E9%92%A9%E5%AD%90.png)
 ### 总结
 最终，在beforeRouteLeave和onbeforeunload的共同作用下，这个刷新、跳转或者关闭等情况下需要提示保存的需求完美解决！但是，还有一点点小遗憾，就是onbeforeunload中弹框的自定义提示语设置始终无法生效，大家要是有更加合适的处理办法，欢迎多多交流指正！
