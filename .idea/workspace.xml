@@ -5,25 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/next" afterPath="$PROJECT_DIR$/themes/next" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/yilia" afterPath="$PROJECT_DIR$/themes/yilia" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/Puppeteer-操纵Chrome的API.md" afterPath="$PROJECT_DIR$/source/_posts/Puppeteer-操纵Chrome的API.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/github的gh-pages分支展示项目页面.md" afterPath="$PROJECT_DIR$/source/_posts/github的gh-pages分支展示项目页面.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/hexo基本操作.md" afterPath="$PROJECT_DIR$/source/_posts/hexo基本操作.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/hexo搭建简记.md" afterPath="$PROJECT_DIR$/source/_posts/hexo搭建简记.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/js面试从闭包说起.md" afterPath="$PROJECT_DIR$/source/_posts/js面试从闭包说起.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/logger4js日志中间件.md" afterPath="$PROJECT_DIR$/source/_posts/logger4js日志中间件.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/mysql学习笔记.md" afterPath="$PROJECT_DIR$/source/_posts/mysql学习笔记.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/node模拟登录segmentfault.md" afterPath="$PROJECT_DIR$/source/_posts/node模拟登录segmentfault.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/vue单页面：当前页面刷新或跳转时提示保存.md" afterPath="$PROJECT_DIR$/source/_posts/vue单页面：当前页面刷新或跳转时提示保存.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/webpack初识.md" afterPath="$PROJECT_DIR$/source/_posts/webpack初识.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/基于Express-MongoDb-vue全家桶-axios搭建个人博客笔记-一.md" afterPath="$PROJECT_DIR$/source/_posts/基于Express-MongoDb-vue全家桶-axios搭建个人博客笔记-一.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/基于Express-MongoDb-vue全家桶-axios搭建个人博客笔记-三.md" afterPath="$PROJECT_DIR$/source/_posts/基于Express-MongoDb-vue全家桶-axios搭建个人博客笔记-三.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/基于Express-MongoDb-vue全家桶-axios搭建个人博客笔记-二.md" afterPath="$PROJECT_DIR$/source/_posts/基于Express-MongoDb-vue全家桶-axios搭建个人博客笔记-二.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/拉勾网爬虫并导出excel.md" afterPath="$PROJECT_DIR$/source/_posts/拉勾网爬虫并导出excel.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/认识react，-并简单与vue对比.md" afterPath="$PROJECT_DIR$/source/_posts/认识react，-并简单与vue对比.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/通过周报系统的登录学到的session和cookie.md" afterPath="$PROJECT_DIR$/source/_posts/通过周报系统的登录学到的session和cookie.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,6 +19,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/next/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="77" column="9" lean-forward="false" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="hexo搭建简记.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/hexo搭建简记.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -107,19 +98,21 @@
       <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="223">
+              <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="baidusitemap.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="baidusitemap.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.deploy_git/baidusitemap.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
-              <caret line="21" column="65" lean-forward="true" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
-              <folding />
+              <caret line="21" column="65" lean-forward="false" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+              <folding>
+                <marker date="1547104317644" expanded="true" signature="1338:1405" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,7 +122,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2860">
               <caret line="130" column="48" lean-forward="false" selection-start-line="130" selection-start-column="40" selection-end-line="130" selection-end-column="48" />
-              <folding />
+              <folding>
+                <marker date="1547104317660" expanded="true" signature="1467:1544" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,7 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>segmentfault.com/u/fighting123/</find>
       <find>2018/07/10/node%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95segmentfault</find>
       <find>https://github.com/fighting123/hexo_images/blob/master/oldArticleImages</find>
       <find>http://p5tstjsfi.bkt.clouddn.com</find>
@@ -162,12 +156,13 @@
       <find>htacce</find>
       <find>htacces</find>
       <find>htaccess</find>
-      <find>s</find>
       <find>si</find>
       <find>site</find>
       <find>sitem</find>
       <find>sitemap</find>
       <find>404.html</find>
+      <find>s</find>
+      <find>seo</find>
     </findStrings>
     <replaceStrings>
       <replace>。</replace>
@@ -204,7 +199,6 @@
         <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/source/_posts/node-login-segmentfault.md" />
         <option value="$PROJECT_DIR$/source/_posts/node-crwl-lagou.md" />
-        <option value="$PROJECT_DIR$/themes/next/_config.yml" />
         <option value="$PROJECT_DIR$/public/baidusitemap.xml" />
         <option value="$PROJECT_DIR$/themes/next/layout/index.swig" />
         <option value="$PROJECT_DIR$/public/2018/03/14/hexo搭建简记/index.html" />
@@ -236,8 +230,9 @@
         <option value="$PROJECT_DIR$/themes/next/layout/_partials/footer.swig" />
         <option value="$PROJECT_DIR$/themes/next/layout/_macro/sidebar.swig" />
         <option value="$PROJECT_DIR$/public/hexo搭建简记.html" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/.deploy_git/baidusitemap.xml" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/themes/next/_config.yml" />
       </list>
     </option>
   </component>
@@ -457,16 +452,15 @@
       <workItem from="1542964301714" duration="637000" />
       <workItem from="1543289230409" duration="353000" />
       <workItem from="1546501050937" duration="14573000" />
-      <workItem from="1547098567482" duration="2888000" />
+      <workItem from="1547098567482" duration="3817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112045000" />
+    <option name="totallyTimeSpent" value="112974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17386723" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -475,7 +469,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15513393" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15513393" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -691,6 +685,7 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="682">
             <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -703,14 +698,6 @@
             <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2860">
-          <caret line="130" column="24" lean-forward="false" selection-start-line="130" selection-start-column="24" selection-end-line="130" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,26 +888,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.deploy_git/sitemap.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2860">
           <caret line="130" column="48" lean-forward="false" selection-start-line="130" selection-start-column="40" selection-end-line="130" selection-end-column="48" />
-          <folding />
+          <folding>
+            <marker date="1547104317660" expanded="true" signature="1467:1544" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.deploy_git/baidusitemap.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
-          <caret line="21" column="65" lean-forward="true" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+          <caret line="21" column="65" lean-forward="false" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+          <folding>
+            <marker date="1547104317644" expanded="true" signature="1338:1405" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="77" column="9" lean-forward="false" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
           <folding />
         </state>
       </provider>
