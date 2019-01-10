@@ -1,9 +1,12 @@
 ---
 title: logger4js日志中间件
-tags: [koa2, 后台日志]
+tags:
+  - koa2
+  - 后台日志
 copyright: true
-date: 2018-04-18 19:20:19
 categories: koa2
+abbrlink: 3416362526
+date: 2018-04-18 19:20:19
 ---
 > 周报管理系统的日志模块本来是简单地console.log()出一些请求信息，但是并不能长时间保存，也不方便查看问题，但是logger4js这个中间件完美的实现了我要的功能。
 

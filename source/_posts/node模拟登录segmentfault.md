@@ -1,9 +1,13 @@
 ---
 title: node模拟登录segmentfault
-date: {{ date }}
+date:
+  '[object Object]': null
 categories: Node.js
-tags: [node, 爬虫]
-copyright : true
+tags:
+  - node
+  - 爬虫
+copyright: true
+abbrlink: 2107580214
 ---
 ## 前言 ##
 前段时间看的爬虫都是不需要登录直接爬取数据，这回就试试爬取需要登录的网站信息吧，说干就干，直接就拿segmentfault做为目标！

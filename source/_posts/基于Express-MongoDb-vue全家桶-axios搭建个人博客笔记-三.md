@@ -1,9 +1,13 @@
 ---
 title: 基于Express&&MongoDb&&vue全家桶&&axios搭建个人博客笔记(三)
-tags: [博客前后台, express个人博客, 笔记]
+tags:
+  - 博客前后台
+  - express个人博客
+  - 笔记
 copyright: true
-date: 2018-04-01 18:22:45
 categories: 个人项目笔记
+abbrlink: 1580152229
+date: 2018-04-01 18:22:45
 ---
 > - 项目前端代码地址：https://github.com/fighting123/my_blog_FE
 > - 项目后台代码地址：https://github.com/fighting123/my_blog_BE

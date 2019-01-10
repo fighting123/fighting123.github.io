@@ -1,9 +1,12 @@
 ---
 title: 通过周报系统的登录学到的session和cookie
-date: 2018-04-15 11:35:36
 categories: koa2
-tags: [session和cookie, 用户免登陆]
-copyright : true
+tags:
+  - session和cookie
+  - 用户免登陆
+copyright: true
+abbrlink: 3426603668
+date: 2018-04-15 11:35:36
 ---
 ## 关于session和cookie基础介绍：
 

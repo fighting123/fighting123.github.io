@@ -1,9 +1,12 @@
 ---
 title: github的gh-pages分支展示项目页面
-tags: [github, gh-pages]
+tags:
+  - github
+  - gh-pages
 copyright: true
-date: 2018-11-21 10:08:15
 categories: GitHub
+abbrlink: 964782692
+date: 2018-11-21 10:08:15
 ---
 ## 引言
 > github上的demo别人需要预览的时候都得clone下来运行才可以，不能外网访问，不利于demo效果的展示，其实将项目打包部署到GitHub Pages上就可以完美解决这个问题了。

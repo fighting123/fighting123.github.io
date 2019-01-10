@@ -1,9 +1,12 @@
 ---
 title: Puppeteer(操纵Chrome的API)
-tags: [node, 爬虫]
+tags:
+  - node
+  - 爬虫
 copyright: true
-date: 2018-07-15 20:14:36
 categories: Node.js
+abbrlink: 2832987539
+date: 2018-07-15 20:14:36
 ---
 ## 介绍：
 [英文版官方文档](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#puppeteerlaunchoptions)：https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#puppeteerlaunchoptions

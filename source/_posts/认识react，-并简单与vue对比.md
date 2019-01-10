@@ -1,9 +1,12 @@
 ---
 title: 认识react， 并简单与vue对比
-date: 2018-08-01 15:45:36
 categories: React
-tags: [react, react与vue对比]
-copyright : true
+tags:
+  - react
+  - react与vue对比
+copyright: true
+abbrlink: 4022628434
+date: 2018-08-01 15:45:36
 ---
 ### 应用场景：
 1. 负责场景下的高性能

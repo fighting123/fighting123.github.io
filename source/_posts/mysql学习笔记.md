@@ -1,9 +1,12 @@
 ---
 title: mysql学习笔记
-date: 2018-04-10 13:21:18
 categories: MySQL
-tags: [数据库, mysql]
-copyright : true
+tags:
+  - 数据库
+  - mysql
+copyright: true
+abbrlink: 693142188
+date: 2018-04-10 13:21:18
 ---
 
 ### 基本了解：

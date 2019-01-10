@@ -1,9 +1,12 @@
 ---
 title: hexo基本操作
-date: {{ date }}
+date:
+  '[object Object]': null
 categories: Hexo
-tags: [hexo]
-copyright : true
+tags:
+  - hexo
+copyright: true
+abbrlink: 3662755565
 ---
 
 ### 创建文章

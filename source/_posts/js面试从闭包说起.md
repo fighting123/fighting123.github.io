@@ -1,9 +1,12 @@
 ---
 title: js面试从闭包说起
-date: 2018-11-13 10:49:39
 categories: 面试
-tags: [js面试, 转载]
-copyright : true
+tags:
+  - js面试
+  - 转载
+copyright: true
+abbrlink: 94083088
+date: 2018-11-13 10:49:39
 ---
 > 转自 https://segmentfault.com/p/1210000009077868/read
 

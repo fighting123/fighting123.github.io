@@ -1,9 +1,12 @@
 ---
 title: webpack初识
-date: 2018-03-19 16:57:00
 categories: webpack
-tags: [打包, Webpack]
-copyright : true
+tags:
+  - 打包
+  - Webpack
+copyright: true
+abbrlink: 415164599
+date: 2018-03-19 16:57:00
 ---
 ## 安装webpack
 

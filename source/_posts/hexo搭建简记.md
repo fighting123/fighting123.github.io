@@ -1,9 +1,13 @@
 ---
 title: hexo搭建简记
-date: {{ date }}
+date:
+  '[object Object]': null
 categories: Hexo
-tags: [hexo, Next]
-copyright : true
+tags:
+  - hexo
+  - Next
+copyright: true
+abbrlink: 266327918
 ---
 
 ## 博客搭建步骤简记
