@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[git常用操作]]></title>
+    <url>%2Fposts%2F807237865.html</url>
+    <content type="text"><![CDATA[基本上涵盖了日常工作中常用的git操作，经常使用sourcetree的同学可以结合着理解～ 可视化git log –online –graph 帮助git –help git组成 工作目录：它持有实际文件 暂存区：保存临时改动 HEAD：指向最后一次的提交五种状态 未修改 已修改 已暂存 已提交 已推送常规操作 初始化：git init 远程仓库： 配置：git remote add url 查看：git remote -v 查看具体某一个：git remote show origin 分支 新建分支：git branch feature 查看所有分支列表：git branch -a 删除分支：git branch -d feature 通过参数(新建并切换)：git checkout -b ‘feature’ 查看状态： git status -s 撤销 已修改，未暂存：git checkout .或者git reset –hard 已暂存，未提交：git checkout .或者git reset 已提交，未推送(新代码只存在与本地库，远程库没有，只需要放弃本地库所有内容，强制与远程分支保持一致即可)：git reset –hard origin/分支名 已推送(此时本地库和远程库代码一致)： 先恢复本地库：git reset –hard HEAD^ 再强制同步远程库：git push -f 不小心pull错了分支： 先 git reflog 查看一下提交记录 再回退到之前的版本：git reset –hard HEAD@{n} git reset –mixed：此为默认方式，不带任何参数的git reset，即时这种方式，它回退到某个版本，只保留源码，回退commit和index信息 –soft：回退到某个版本，只回退了commit的信息，不会恢复到index file一级。如果还要提交，直接commit即可 git reset –hard：彻底回退到某个版本，本地的源码也会变为上一个版本的内容，此命令 慎用！ 合并（多用merge，少用pull,相当于sourcetree合并时候取消勾选直接提交，即先合并不直接提交，检查无误后手动在提交）(切换到要合并到的分支) merge：合并分支 合并分支：git merge test 取消合并：git merge –abort 继续执行：git merge –continue pull： 相当于是从远程获取最新版本并 merge 到本地 fetch： 相当于是从远程获取最新版本到本地，不会自动合并常见问题 gitignore失效：git rm -r –cached . 缓存问题： 缓存：git stash或者git stash save “备注” 查看缓存：git stash list 取出缓存(会经堆栈中的代码删除)：git stash pop或者git stash pop stash@{0} 取出缓存(不会删除堆栈中的代码)：git stash apply或者git stash apply stash@{0} 清除某次缓存：git stash drop stash@{0} 清除所有缓存：git stash clear 初次使用git，在执行完”git add readme.txt”命令后，在执行commit时，由于命令写错，没有写提交日志，再次更正提交就出现上述错误：Unable to create ‘E:/xxx/.git/index.lock’: File exists。解决方案：在.git同级目录，执行rm -f .git/index.lock 将文件删除即可提交成功 组成 tree blog commit 参考：https://www.cnblogs.com/linjiqin/p/8036008.html]]></content>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[var let const区别]]></title>
     <url>%2Fposts%2F3881397270.html</url>
     <content type="text"><![CDATA[首先，分清楚js中存在两种作用域，即全局作用域和方法作用域 varvar定义的变量是方法作用域，比如：12345function() &#123; var str = &apos;I am var&apos;; console.log(str); // I am var&#125;console.log(str); // undefined 这是在函数中，但是需要注意的是在for循环中的问题： 12345678910function calcute(&#123;price: [2,4,3]&#125;) &#123; var totalPrice = []; for (var i = 0;i &lt; price.length; i++) &#123; var finallyPrice = price[i] * 2; totalPrice.push(finallyPrice); &#125; console.log(i); // 3 console.log(price); // [2,4,3] console.log(finallyPrice); // [4,8,6];&#125; 这个函数中都能访问到i、price、finallyPrice，这是我们不期望的，这就是var方法作用域的弊端 letlet就正好解决了这个问题，它是块级作用域，即{}内可以访问12345678910function calcute(&#123;price: [2,4,3]&#125;) &#123; let totalPrice = []; for (let i = 0;i &lt; price.length; i++) &#123; let finallyPrice = price[i] * 2; totalPrice.push(finallyPrice); &#125; console.log(i); // i is not defined console.log(price); // [2,4,3] console.log(finallyPrice); // finallyPrice is not defined;&#125; 还需要注意的是：var定义的变量在定义之前访问是undefined，但是let定义变量在定义之前访问会报错Uncaught ReferenceError constconst和let作用域一致，但是通过const赋值的变量不可再次复制（不是变量本身也不可变，只是不能再次赋值） 123456const params = &#123; count: 3, price: 10&#125;params.count = 4 // 正常params = [] // 报错Uncaught TypeError 总结变量值会改变用let，不会改变用const（一般都是用来表述常量），尽量减少用var]]></content>
@@ -9,17 +17,6 @@
       </categories>
       <tags>
         <tag>es6</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[hexo基本操作]]></title>
-    <url>%2Fposts%2F3662755565.html</url>
-    <content type="text"><![CDATA[创建文章1$ hexo new "My New Post" More info: Writing 本地运行1$ hexo server More info: Server 编译1$ hexo generate More info: Generating 发布1$ hexo deploy 同步项目源文件到Github123456789// 添加源文件git add .// git提交git commit -m &quot;&quot;// 先拉原来Github分支上的源文件到本地，进行合并// 分支名后面的“--allow-unrelated-histories”是为了弹出“fatal: refusing to merge unrelated histories.”的错误git pull origin 分支名 --allow-unrelated-histories// 比较解决前后版本冲突后，push源文件到Github的分支git push origin 分支名]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -32,6 +29,17 @@
       <tags>
         <tag>hexo</tag>
         <tag>Next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo基本操作]]></title>
+    <url>%2Fposts%2F3662755565.html</url>
+    <content type="text"><![CDATA[创建文章1$ hexo new "My New Post" More info: Writing 本地运行1$ hexo server More info: Server 编译1$ hexo generate More info: Generating 发布1$ hexo deploy 同步项目源文件到Github123456789// 添加源文件git add .// git提交git commit -m &quot;&quot;// 先拉原来Github分支上的源文件到本地，进行合并// 分支名后面的“--allow-unrelated-histories”是为了弹出“fatal: refusing to merge unrelated histories.”的错误git pull origin 分支名 --allow-unrelated-histories// 比较解决前后版本冲突后，push源文件到Github的分支git push origin 分支名]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
